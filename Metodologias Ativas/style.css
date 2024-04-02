@@ -1,0 +1,103 @@
+* {
+    margin: 0; background-color: 
+}
+
+li, ul {
+    list-style-type: none; display: inline-block; 
+    
+}
+
+
+ul{
+    height: 30px;   padding: 20px;  
+}
+
+a.menu {
+    text-decoration: none; color: white ;  
+    font-size: 20px; padding-right: 50px;   
+}
+
+.nav-bar{
+background-color: rgb(20, 20, 20); text-align: right; box-shadow: 3px 3px rgba(0, 0, 0, 0.371);
+}
+
+.titulo-pag{
+    text-align: left; display: flex;
+}
+
+nav{
+    position: relative; text-align: center; 
+}
+ul{text-align: center;}
+
+h2 {
+    text-align: left;
+}
+
+p {
+    text-align: justify;
+}
+a{
+    text-align: center;
+}
+a:hover{ border-bottom: 1px solid orangered;  color:chocolate;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin: 0px;
+    background-color: rgb(40, 40, 40);
+    width: 100%;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.saiba {
+    color: blue;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 40px;
+}
+
+
+
+.textos {
+    line-height: 27px;
+    text-align: justify;
+    display: flex;
+}
+
+
+.principal{
+    width: 80%; 
+    margin: 20px;
+   
+      
+}
+
+
+.video{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+       
+}
+video{
+    width: 70%;
+    
+}
+
+
+li{align-items: center; text-align: center; justify-content: center; justify-items: center;}
+a{align-items: center; text-align: center; justify-content: center; justify-items: center;}
+ul{align-items: center; text-align: center; justify-content: center; justify-items: center;}
