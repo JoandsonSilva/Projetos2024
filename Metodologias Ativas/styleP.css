@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    height: 100vh; /* Define a altura da tela para garantir que a imagem de fundo cubra toda a tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    opacity: 200px;
+    background-color: black;
+}
+
+body::before {
+    content: "";
+    background-image: url('../Metodologias Ativas/Vídeos/Baleia.png');
+    background-size: cover;
+    background-position: center center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+    animation: scaleBackground 10s infinite alternate; 
+    opacity: 0.9;
+}
+
+.container {
+    text-align: center; 
+}
+
+.content {
+    margin-bottom: 20px; 
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.entrar {
+    padding: 15px 30px;
+    background-color: gold;
+    color: navy;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: background-color 0.9s ease;
+}
+
+.entrar:hover {
+    background-color: rgba(255, 251, 165, 0.4);
+    color: rgb(7, 0, 40);
+    transform: scale(1.1); /* Ajusta a escala do botão ao passar o mouse */
+    transition: 0.3s ease;
+}
+
+@keyframes scaleBackground {
+    from {
+        transform: scale(1); /* Escala inicial */
+    }
+    to {
+        transform: scale(1.08); /* Escala final */
+    }
+}

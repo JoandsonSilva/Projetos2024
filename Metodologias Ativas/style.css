@@ -1,5 +1,5 @@
 * {
-    margin: 0; background-color: 
+    margin: 0;  
 }
 
 li, ul {
@@ -26,7 +26,7 @@ background-color: rgb(20, 20, 20); text-align: right; box-shadow: 3px 3px rgba(0
 }
 
 nav{
-    position: relative; text-align: center; 
+    position: relative; text-align: center;  margin-top: 0 ;
 }
 ul{text-align: center;}
 
@@ -101,3 +101,48 @@ video{
 li{align-items: center; text-align: center; justify-content: center; justify-items: center;}
 a{align-items: center; text-align: center; justify-content: center; justify-items: center;}
 ul{align-items: center; text-align: center; justify-content: center; justify-items: center;}
+
+
+.bike {
+    width: 8%;
+    margin: -3px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    animation: go-back 11s infinite alternate;
+    position: absolute;
+    ;
+}
+@keyframes go-back {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(1000px);
+    }
+}
+.bg {
+    width: 120%;
+    height: 80px;
+    margin-bottom: auto;
+    z-index: -1;
+    overflow: hidden;
+    opacity: 0.3;
+    background-image: url('https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_1280.png');
+    background-repeat: repeat-x;
+    background-repeat:repeat ;
+    position: relative;
+    background-position: center center;
+    left: 0;
+    animation: moveBackground 10s linear infinite ; 
+ }
+ 
+ @keyframes moveBackground {
+    0% {
+       transform: translateX(0%);
+    }
+    100% {
+       transform: translateX(-14%);
+    }
+ }
+ 
+
