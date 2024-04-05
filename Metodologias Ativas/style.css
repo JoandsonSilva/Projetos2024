@@ -44,7 +44,7 @@ a:hover{ border-bottom: 1px solid orangered;  color:chocolate;
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     text-align: center;
     margin: 0px;
@@ -54,9 +54,10 @@ footer {
     height: 40px;
     display: flex;
     justify-content: center;
-    justify-items: center;
     align-items: center;
+    z-index: 1000;
 }
+
 
 
 .saiba {
@@ -146,3 +147,9 @@ ul{align-items: center; text-align: center; justify-content: center; justify-ite
  }
  
 
+
+
+ .aulas{
+    line-height: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+ }

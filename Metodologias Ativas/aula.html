@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .topicos {
+            margin-bottom: 20px;
+        }
+
+        .aula {
+            margin-bottom: 10px;
+            display: none;
+            /* Inicialmente, todas as aulas estão ocultas */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="nav-bar">
+            <a href="principal.html">
+                <h1 class="titulo-pag">Práticas Pedagógicas</h1>
+            </a>
+
+            <ul>
+                <li><a class="menu" href="aula.html">Aulas</a></li>
+                <li><a class="menu" href="metodologias.html">Metodologias Ativas</a></li>
+                <li><a class="menu" href="recurso.html">Recursos para Professores</a></li>
+                <li><a class="menu" href="sobre.html">Sobre mim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <h1>Aulas</h1>
+
+        <div class="topicos">
+            <h2>Selecione o Tipo de Aula:</h2>
+            <select id="opcoesAula">
+                <option value="aulaH">Aula Híbrida</option>
+                <option value="aulaComRotação">Aula com Rotação</option>
+                <option value="aulaComSalaInvertida">Aula com Sala Invertida</option>
+
+            </select>
+        </div>
+
+        <!-- Lista suspensa para selecionar o tema dentro de cada tipo de aula -->
+        <div class="topicos" id="topicosAula" style="display: none;">
+            <h2>Selecione o Tema:</h2>
+            <select id="opcoesTema">
+                <!-- As opções serão preenchidas dinamicamente com JavaScript -->
+            </select>
+        </div>
+
+        <div class="aulas">
+
+            <!-- Aulas de Aula Híbrida -->
+            <div class="aulaH aula tema2">
+                <h3>Aula Híbrida</h3>
+                <!-- Conteúdo da aula híbrida -->
+            </div>
+
+            <!-- Aulas de Aula com Rotação -->
+            <div class="aulaComRotação aula temaA">
+                <h3>Aula com Rotação</h3>
+                <div class="resumo">
+                    <h4>Resumo</h4>
+                    <p>Descrição da aula com rotação. Aqui você pode descrever o conteúdo principal da aula e seus
+                        objetivos.</p>
+                </div>
+                <div class="detalhes">
+                    <h4>Detalhes</h4>
+                    <h5>Pensamentos Antes da Aula</h5>
+                    <p>Aqui você pode descrever o planejamento e os objetivos iniciais da aula com rotação.</p>
+                    <h5>Durante a Aula</h5>
+                    <p>Descreva como a aula foi conduzida, quais atividades foram realizadas e como os alunos
+                        responderam.</p>
+                    <h5>Depois da Aula</h5>
+                    <p>Reflexões sobre o que funcionou bem, o que poderia ser melhorado e planos para a próxima aula.
+                    </p>
+                </div>
+                <div class="habilidades">
+                    <h4>Habilidades Buscadas</h4>
+                    <ul>
+                        <li>Habilidade 1</li>
+                        <li>Habilidade 2</li>
+
+                    </ul>
+                </div>
+                <div class="papelProfessor">
+                    <h4>Papel do Professor</h4>
+                    <p>Descreva o papel do professor na condução da aula com rotação, orientando os alunos, facilitando a
+                        aprendizagem e fornecendo suporte quando necessário.</p>
+                </div>
+                <div class="exemploCross">
+                    <h4>Exemplo de Cross</h4>
+                    <p>Aqui você pode inserir um álbum de imagens para mostrar exemplos visuais relacionados à aula
+                        com rotação. Você pode usar uma galeria de imagens ou um slideshow.</p>
+
+                </div>
+            </div>
+
+            <!-- Aulas de Aula com Sala Invertida -->
+            <div class="aulaComSalaInvertida aula temaX">
+                <h3>Aula com Sala Invertida</h3>
+                <!-- Conteúdo da aula com sala invertida -->
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Função para preencher a lista suspensa de temas com base no tipo de aula selecionado
+function preencherTemas() {
+    var opcoesAula = document.getElementById("opcoesAula");
+    var opcoesTema = document.getElementById("opcoesTema");
+    var temas = [];
+
+    // Limpar opções existentes
+    opcoesTema.innerHTML = "";
+
+    // Definir os temas com base no tipo de aula selecionado
+    switch (opcoesAula.value) {
+        case "aulaH":
+            // Definir os temas para aula híbrida
+            temas = ["tema1", "tema2", "tema3"];
+            break;
+        case "aulaComRotação":
+            // Definir os temas para aula com rotação
+            temas = ["temaA", "temaB", "temaC"];
+            break;
+        case "aulaComSalaInvertida":
+            // Definir os temas para aula com sala invertida
+            temas = ["temaX", "temaY", "temaZ"];
+            break;
+    }
+
+   
+    temas.forEach(function (tema) {
+        var option = document.createElement("option");
+        option.text = tema;
+        opcoesTema.add(option);
+    });
+
+  
+    document.getElementById("topicosAula").style.display = "block";
+}
+
+
+function mostrarAula() {
+    var opcoesTema = document.getElementById("opcoesTema").value;
+    var aulas = document.getElementsByClassName("aula");
+
+ 
+    for (var i = 0; i < aulas.length; i++) {
+        aulas[i].style.display = "none";
+    }
+
+    
+    var aulaSelecionada = document.querySelector("." + opcoesTema);
+    if (aulaSelecionada) {
+        aulaSelecionada.style.display = "block";
+    }
+}
+
+
+document.getElementById("opcoesAula").addEventListener("change", preencherTemas);
+
+
+document.getElementById("opcoesTema").addEventListener("change", mostrarAula);
+
+
+preencherTemas();
+
+    </script>
+
+</body>
+
+</html>

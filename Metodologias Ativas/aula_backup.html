@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .topicos {
+            margin-bottom: 20px;
+        }
+
+        .aula {
+            margin-bottom: 10px;
+            display: none;
+            /* Inicialmente, todas as aulas estão ocultas */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="nav-bar">
+            <a href="principal.html">
+                <h1 class="titulo-pag">Práticas Pedagógicas</h1>
+            </a>
+
+            <ul>
+                <li><a class="menu" href="aula.html">Aulas</a></li>
+                <li><a class="menu" href="metodologias.html">Metodologias Ativas</a></li>
+                <li><a class="menu" href="recurso.html">Recursos para Professores</a></li>
+                <li><a class="menu" href="sobre.html">Sobre mim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <h1>Aulas</h1>
+        <div class="topicos">
+            <h2>Selecione o Tipo de Aula:</h2>
+            <select id="opcoesAula" onchange="mostrarAulas()">
+                <option value="aulaH">Aula Híbrida</option>
+                <option value="aulaComRotação">Aula com Rotação</option>
+                <option value="aulaComSalaInvertida">Aula com Sala Invertida</option>
+
+            </select>
+
+
+        </div>
+
+
+        <div class="topicos" id="topicosAula" style="display: none;">
+            <h2>Selecione o Tema:</h2>
+            <select id="opcoesTema">
+
+            </select>
+        </div>
+
+
+        <div class="aulas">
+
+          
+            
+            
+            <div class="aulaH aula">
+                <h3>Aula Híbrida</h3>
+
+                <div class="resumo">
+                    <h4>Resumo</h4>
+                    <p>Descrição da aula híbrida. Aqui você pode descrever o conteúdo principal da aula e seus
+                        objetivos.</p>
+                </div>
+                <div class="detalhes">
+                    <h4>Detalhes</h4>
+                    <h5>Pensamentos Antes da Aula</h5>
+                    <p>Aqui você pode descrever o planejamento e os objetivos iniciais da aula híbrida.</p>
+                    <h5>Durante a Aula</h5>
+                    <p>Descreva como a aula foi conduzida, quais atividades foram realizadas e como os alunos
+                        responderam.</p>
+                    <h5>Depois da Aula</h5>
+                    <p>Reflexões sobre o que funcionou bem, o que poderia ser melhorado e planos para a próxima aula.
+                    </p>
+                </div>
+                <div class="habilidades">
+                    <h4>Habilidades Buscadas</h4>
+                    <ul>
+                        <li>Habilidade 1</li>
+                        <li>Habilidade 2</li>
+
+                    </ul>
+                </div>
+                <div class="papelProfessor">
+                    <h4>Papel do Professor</h4>
+                    <p>Descreva o papel do professor na condução da aula híbrida, orientando os alunos, facilitando a
+                        aprendizagem e fornecendo suporte quando necessário.</p>
+                </div>
+                <div class="exemploCross">
+                    <h4>Exemplo de Cross</h4>
+                    <p>Aqui você pode inserir um álbum de imagens para mostrar exemplos visuais relacionados à aula
+                        híbrida. Você pode usar uma galeria de imagens ou um slideshow.</p>
+
+                </div>
+            </div>
+
+
+            <div class="aulaComRotação aula">
+                <h3>Aula com Rotação</h3>
+                <div class="resumo">
+                    <h4>Descrição</h4>
+                    <p>Descrição da aula híbrida. Aqui você pode descrever o conteúdo principal da aula e seus
+                        objetivos.</p>
+                </div>
+                <div class="detalhes">
+                    <h4>Detalhes</h4>
+                    <h5>Antes da Aula</h5>
+                    <p>Aqui você pode descrever o planejamento e os objetivos iniciais da aula híbrida.</p>
+                    <h5>Durante a Aula</h5>
+                    <p>Descreva como a aula foi conduzida, quais atividades foram realizadas e como os alunos
+                        responderam.</p>
+                    <h5>Depois da Aula</h5>
+                    <p>Reflexões sobre o que funcionou bem, o que poderia ser melhorado e planos para a próxima aula.
+                    </p>
+                </div>
+                <div class="habilidades">
+                    <h4>Habilidades Buscadas</h4>
+                    <ul>
+                        <li>Habilidade 1</li>
+                        <li>Habilidade 2</li>
+
+                    </ul>
+                </div>
+                <div class="papelProfessor">
+                    <h4>Papel do Professor</h4>
+                    <p>Descreva o papel do professor na condução da aula híbrida, orientando os alunos, facilitando a
+                        aprendizagem e fornecendo suporte quando necessário.</p>
+                </div>
+                <div class="exemploCross">
+                    <h4>Exemplo de Cross</h4>
+                    <p>Aqui você pode inserir um álbum de imagens para mostrar exemplos visuais relacionados à aula
+                        híbrida. Você pode usar uma galeria de imagens ou um slideshow.</p>
+
+                </div>
+            </div>
+
+
+            <div class="aulaComSalaInvertida aula">
+                <h3>Aula com Sala Invertida</h3>
+                <div class="resumo">
+                    <h4>Resumo</h4>
+                    <p>Descrição da aula híbrida. Aqui você pode descrever o conteúdo principal da aula e seus
+                        objetivos.</p>
+                </div>
+                <div class="detalhes">
+                    <h4>Detalhes</h4>
+                    <h5>Pensamentos Antes da Aula</h5>
+                    <p>Aqui você pode descrever o planejamento e os objetivos iniciais da aula híbrida.</p>
+                    <h5>Durante a Aula</h5>
+                    <p>Descreva como a aula foi conduzida, quais atividades foram realizadas e como os alunos
+                        responderam.</p>
+                    <h5>Depois da Aula</h5>
+                    <p>Reflexões sobre o que funcionou bem, o que poderia ser melhorado e planos para a próxima aula.
+                    </p>
+                </div>
+                <div class="habilidades">
+                    <h4>Habilidades Buscadas</h4>
+                    <ul>
+                        <li>Habilidade 1</li>
+                        <li>Habilidade 2</li>
+                        <!-- Adicione mais habilidades conforme necessário -->
+                    </ul>
+                </div>
+                <div class="papelProfessor">
+                    <h4>Papel do Professor</h4>
+                    <p>Descreva o papel do professor na condução da aula híbrida, orientando os alunos, facilitando a
+                        aprendizagem e fornecendo suporte quando necessário.</p>
+                </div>
+                <div class="exemploCross">
+                    <h4>Exemplo de Cross</h4>
+                    <p>Aqui você pode inserir um álbum de imagens para mostrar exemplos visuais relacionados à aula
+                        híbrida. Você pode usar uma galeria de imagens ou um slideshow.</p>
+                    <!-- Adicione o código para inserir imagens aqui -->
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="javascriptlistas.js"></script>
+
+</body>
+
+</html>
