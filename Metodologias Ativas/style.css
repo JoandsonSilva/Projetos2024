@@ -142,7 +142,7 @@ ul{align-items: center; text-align: center; justify-content: center; justify-ite
        transform: translateX(0%);
     }
     100% {
-       transform: translateX(-14%);
+       transform: translateX(-19%);
     }
  }
  
