@@ -1,5 +1,7 @@
 * {
-    margin: 0;  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 li, ul {
@@ -43,20 +45,7 @@ a{
 a:hover{ border-bottom: 1px solid orangered;  color:chocolate;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-    margin: 0px;
-    background-color: rgb(40, 40, 40);
-    width: 100%;
-    color: white;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
+
 
 
 
@@ -153,3 +142,215 @@ ul{align-items: center; text-align: center; justify-content: center; justify-ite
     line-height: 25px;
     font-family:Georgia, 'Times New Roman', Times, serif
  }
+
+ .logo img{
+    width: 7%;
+    margin: 10px;
+}
+
+.navbar {
+    background-color: #000000;
+    padding: 20px 20px; /* Ajustado o padding */
+    display: flex;
+    align-items: center;
+    top: 0;
+    z-index: 1000; /* Garante que o navbar esteja acima do conteúdo */
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: start;
+    text-decoration: noneS;
+    margin-left: 30px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    padding-right: 20px;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        
+        padding: 15px; /* Ajustado o padding */
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    margin: 0px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-top: 2px solid rgba(0, 119, 255, 0.514);
+    box-shadow: 0px -5px 10px rgba(0, 136, 255, 0.216);
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.topicos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.aula {
+    margin-bottom: 20px;
+    display: none;
+    /* Inicialmente, todas as aulas estão ocultas */
+}
+
+/* Botões de seleção e opção */
+select {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #00b7ff;
+    outline: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+select option {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Estilizando os detalhes das aulas */
+.aula .resumo,
+.aula .detalhes,
+.aula .habilidades,
+.aula .papelProfessor,
+.aula .exemploCross {
+    background-color: #f0f0f085;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px #00000042  ;
+}
+
+.aula h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.aula h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.aula p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+
+/* CSS para imagens inicialmente reduzidas */
+.exemploCross .imagem-container img {
+    width: auto;
+    height: 100%;
+    transition: transform 0.3s ease;
+    filter: grayscale(100%);
+    object-fit: cover;
+}
+
+/* CSS para imagens expandidas */
+.exemploCross .imagem-container.expandida img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Efeito de transição ao passar o mouse */
+.exemploCross .imagem-container img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+/* Efeito de transição ao clicar na imagem */
+.exemploCross .imagem-container img:active {
+    transform: scale(1.2);
+}
+.exemploCross .imagem-container {
+    display: inline-block;
+    width: calc(100% / 10 - 10px);
+    margin-right: 10px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.exemploCross .imagem-container.expandida {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    max-width: 80%; /* Ajuste o tamanho máximo da imagem expandida */
+    max-height: 80%; /* Ajuste a altura máxima da imagem expandida */
+}
+
+.exemploCross .fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.exemploCross .fechar:hover {
+    color: red;
+}

@@ -1,3 +1,5 @@
+*{margin: auto;}
+
 body {
     margin: 0;
     padding: 0;
@@ -29,6 +31,8 @@ body::before {
 
 p{
     color: #FFFFFF; margin-top: 10px;
+    font-size: 18px;
+    font-family:  'Century Gothics' ;
 }
 .container {
     
@@ -41,7 +45,7 @@ p{
 }
 
 .content {
-    margin-bottom: 20px; 
+    margin-bottom: 20px; margin: auto;
         
 }
 
@@ -51,13 +55,13 @@ h1 {
     border:1px #FFB30D;
     color: rgb(255, 255, 255);
     margin-top: 30px;
-    
+    margin: auto;
 }
 
 .entrar {
     
     padding: 15px 30px;
-    background-color: none;
+    
     color: rgba(255, 255, 255, 0.062);
     text-decoration: none;
     font-size: 15px;
@@ -65,17 +69,128 @@ h1 {
     transition: background-color 0.9s ease;
     box-shadow: 0 0 10px #F2CA99;
     border: 2px solid #F2E2C4;
+    border-style: solid;
     
+    display:flex;
+
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
+    border-radius: 50em;
+    border: 3px solid transparent;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    
+    
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    cursor:pointer;
+    animation: rotateGradient 5s linear infinite; /* Aplica a animação de gradiente */
+
+
 
 }
+
+@keyframes rotateGradient {
+    0% {
+        background-position: 0 50%; /* Começa no lado esquerdo */
+    }
+    100% {
+        background-position: 100% 50%; /* Termina no lado direito */
+    }
+}
+  
 
 .entrar:hover {
     
     color: #FFFFFF;
-    border: 2px solid #A67A46;
+    border: 2px solid #fbff00;
     
     transform: scale(1.1); /* Ajusta a escala do botão ao passar o mouse */
     transition: 0.3s ease;
     
 }
+ 
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #000000;
+    padding: 20px 40px; /* Ajustado o padding */
+    width: 100%; /* Ocupar toda a largura */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Garante que o navbar esteja acima do conteúdo */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px; /* Ajustado o padding */
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.logo img{
+    width: 7%;
+    margin: 10px;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto do footer */
+    padding: 10px; /* Espaçamento interno do footer */
+    text-align: center; /* Alinhar o texto ao centro */
+    font-size: 10px;
+}

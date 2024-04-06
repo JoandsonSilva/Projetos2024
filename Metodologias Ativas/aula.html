@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aulas</title>
     <link rel="stylesheet" href="style.css">
+
     <style>
         .container {
             max-width: 800px;
@@ -43,10 +44,8 @@
         </div>
     </nav>
 
-
-
     <div class="container">
-        <h1>Aulas</h1>
+        <h1>Aulas com Metodologias Ativas</h1>
 
         <div class="topicos">
             <h2>Selecione o Tipo de Aula:</h2>
@@ -60,7 +59,7 @@
 
         <!-- Lista suspensa para selecionar o tema dentro de cada tipo de aula -->
         <div class="topicos" id="topicosAula" style="display: none;">
-            <h2>Selecione o Tema:</h2>
+            <h2>Selecione o Tema da aula:</h2>
             <select id="opcoesTema">
                 <!-- As opções serão preenchidas dinamicamente com JavaScript -->
             </select>
@@ -112,6 +111,30 @@
                         com rotação. Você pode usar uma galeria de imagens ou um slideshow.</p>
 
                 </div>
+
+                <div class="exemploCross">
+
+                    <div class="imagem-container">
+                        <img src="https://media.istockphoto.com/id/1132901001/pt/vetorial/pupils-solving-math-problem-on-chalkboard-during-lesson-education-concept-modern-school.jpg?s=612x612&w=0&k=20&c=Zz2Z9IkxQn0ieg3GA8wbRwZ9FBKZ5qmsk1DtSacQwvg=" alt="Imagem 1">
+                    </div>
+                    <span class="fechar">&times;</span>
+                    <div class="imagem-container">
+                        <img src="https://media.istockphoto.com/id/1132901001/pt/vetorial/pupils-solving-math-problem-on-chalkboard-during-lesson-education-concept-modern-school.jpg?s=612x612&w=0&k=20&c=Zz2Z9IkxQn0ieg3GA8wbRwZ9FBKZ5qmsk1DtSacQwvg=" alt="Imagem 1">
+                    </div>
+                    <span class="fechar">&times;</span>
+                    <div class="imagem-container">
+                        <img src="https://media.istockphoto.com/id/1132901001/pt/vetorial/pupils-solving-math-problem-on-chalkboard-during-lesson-education-concept-modern-school.jpg?s=612x612&w=0&k=20&c=Zz2Z9IkxQn0ieg3GA8wbRwZ9FBKZ5qmsk1DtSacQwvg=" alt="Imagem 1">
+                    </div>
+                    <span class="fechar">&times;</span>
+                    <div class="imagem-container">
+                        <img src="https://media.istockphoto.com/id/1132901001/pt/vetorial/pupils-solving-math-problem-on-chalkboard-during-lesson-education-concept-modern-school.jpg?s=612x612&w=0&k=20&c=Zz2Z9IkxQn0ieg3GA8wbRwZ9FBKZ5qmsk1DtSacQwvg=" alt="Imagem 1">
+                    </div>
+                    <span class="fechar">&times;</span>
+                
+                
+                </div>
+
+                
             </div>
 
             <!-- Aulas de Aula com Sala Invertida -->
@@ -186,8 +209,46 @@ document.getElementById("opcoesTema").addEventListener("change", mostrarAula);
 
 preencherTemas();
 
+
+
+
     </script>
 
+
+
+<script>
+    // Selecionar todas as imagens
+var imagens = document.querySelectorAll('.exemploCross .imagem-container img');
+
+// Adicionar um ouvinte de evento de clique a cada imagem
+imagens.forEach(function(imagem) {
+    imagem.addEventListener('click', function() {
+        // Verificar se a imagem já está expandida
+        var expandida = imagem.parentElement.classList.contains('expandida');
+
+        if (expandida) {
+            // Se a imagem estiver expandida, remover a classe 'expandida' para voltar ao tamanho original
+            imagem.parentElement.classList.remove('expandida');
+        } else {
+            // Se a imagem não estiver expandida, adicionar a classe 'expandida' para expandi-la
+            imagem.parentElement.classList.add('expandida');
+        }
+    });
+});
+
+// Selecionar todos os ícones de fechar
+var fecharIcones = document.querySelectorAll('.exemploCross .fechar');
+
+// Adicionar um ouvinte de evento de clique a cada ícone de fechar
+fecharIcones.forEach(function(fecharIcone) {
+    fecharIcone.addEventListener('click', function() {
+        // Remover a classe 'expandida' quando o ícone de fechar é clicado
+        fecharIcone.parentElement.classList.remove('expandida');
+    });
+});
+
+
+</script>
 </body>
 
 </html>
