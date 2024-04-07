@@ -24,16 +24,33 @@
     </div>
   
     <div class="container">
+        <div class="image-container imagem-com-sombra">
+            <img src="../Metodologias Ativas/icon/05d16f9c-c375-4352-88f8-4a836ae0ea4f.png" alt="">
+        </div>
         <div class="content">
             <h1>Metodologias Ativas</h1>
             <p>Explore novas abordagens de ensino e envolvimento com as metodologias ativas. Descubra como transformar sua sala de aula em um ambiente dinâmico e acolhedor, onde o aprendizado floresce e os(as) participantes  são inspirados a alcançar todo o seu potencial. Seja parte da revolução educacional, criando um futuro brilhante para os(as) alunos(as).</p>
             <a href="index.html" class="entrar">Conheça</a>
         </div>
+        
     </div>
     
     <footer>
         Creation by Joandson Silva
     </footer>
     <script src="javascriptprincipal.js"> </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var scrollDownBtn = document.querySelector('.scroll-down');
+
+            scrollDownBtn.addEventListener('click', function() {
+                window.scrollBy({ 
+                    top: window.innerHeight,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
