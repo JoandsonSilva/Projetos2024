@@ -5,32 +5,38 @@
 }
 
 li, ul {
-    list-style-type: none; display: inline-block; 
-    
+    list-style-type: none;
+    display: inline-block; 
 }
 
-
-ul{
-    height: 30px;   padding: 20px;  
+ul {
+    height: 30px;
+    padding: 20px;  
 }
 
 a.menu {
-    text-decoration: none; color: white ;  
-    font-size: 20px; padding-right: 50px;   
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-right: 50px;   
 }
 
-.nav-bar{
-background-color: rgb(20, 20, 20); text-align: right; box-shadow: 3px 3px rgba(0, 0, 0, 0.371);
+.nav-bar {
+    background-color: rgb(20, 20, 20);
+    text-align: right;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.371);
 }
 
-.titulo-pag{
-    text-align: left; display: flex;
+.titulo-pag {
+    text-align: left;
+    display: flex;
 }
 
-nav{
-    position: relative; text-align: center;  margin-top: 0 ;
+nav {
+    position: relative;
+    text-align: center;
+    margin-top: 0;
 }
-ul{text-align: center;}
 
 h2 {
     text-align: left;
@@ -39,15 +45,15 @@ h2 {
 p {
     text-align: justify;
 }
-a{
+
+a {
     text-align: center;
 }
-a:hover{ border-bottom: 1px solid orangered;  color:chocolate;
+
+a:hover {
+    border-bottom: 1px solid orangered;
+    color: chocolate;
 }
-
-
-
-
 
 .saiba {
     color: blue;
@@ -56,42 +62,28 @@ a:hover{ border-bottom: 1px solid orangered;  color:chocolate;
     line-height: 40px;
 }
 
-
-
 .textos {
     line-height: 27px;
     text-align: justify;
     display: flex;
 }
 
-
-.principal{
+.principal {
     width: 80%; 
-    margin: 20px;
-   
-      
+    margin: 20px;  
 }
 
-
-.video{
+.video {
     margin: 10px;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    
-       
 }
-video{
+
+video {
     width: 70%;
-    
 }
-
-
-li{align-items: center; text-align: center; justify-content: center; justify-items: center;}
-a{align-items: center; text-align: center; justify-content: center; justify-items: center;}
-ul{align-items: center; text-align: center; justify-content: center; justify-items: center;}
-
 
 .bike {
     width: 8%;
@@ -100,8 +92,8 @@ ul{align-items: center; text-align: center; justify-content: center; justify-ite
     margin-bottom: 0px;
     animation: go-back 11s infinite alternate;
     position: absolute;
-    ;
 }
+
 @keyframes go-back {
     from {
       transform: translateX(0);
@@ -110,6 +102,7 @@ ul{align-items: center; text-align: center; justify-content: center; justify-ite
       transform: translateX(1000px);
     }
 }
+
 .bg {
     width: 120%;
     height: 80px;
@@ -119,31 +112,28 @@ ul{align-items: center; text-align: center; justify-content: center; justify-ite
     opacity: 0.3;
     background-image: url('https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_1280.png');
     background-repeat: repeat-x;
-    background-repeat:repeat ;
+    background-repeat: repeat ;
     position: relative;
     background-position: center center;
     left: 0;
-    animation: moveBackground 10s linear infinite ; 
- }
- 
- @keyframes moveBackground {
+    animation: moveBackground 10s linear infinite; 
+}
+
+@keyframes moveBackground {
     0% {
        transform: translateX(0%);
     }
     100% {
        transform: translateX(-19%);
     }
- }
- 
+}
 
-
-
- .aulas{
+.aulas {
     line-height: 25px;
-    font-family:Georgia, 'Times New Roman', Times, serif
- }
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
- .logo img{
+.logo img {
     width: 7%;
     margin: 10px;
 }
@@ -190,7 +180,6 @@ ul{align-items: center; text-align: center; justify-content: center; justify-ite
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        
         padding: 15px; /* Ajustado o padding */
     }
 
@@ -203,6 +192,7 @@ ul{align-items: center; text-align: center; justify-content: center; justify-ite
         margin-bottom: 10px;
     }
 }
+
 footer {
     position: fixed;
     bottom: 0;
@@ -220,8 +210,6 @@ footer {
     box-shadow: 0px -5px 10px rgba(0, 136, 255, 0.216);
 }
 
-
-
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -230,8 +218,7 @@ footer {
 
 .topicos {
     margin-top: 20px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;  
 }
 
 .aula {
@@ -265,7 +252,7 @@ select option {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 5px 5px 5px #00000042  ;
+    box-shadow: 5px 5px 5px #00000042;
 }
 
 .aula h3 {
@@ -282,14 +269,6 @@ select option {
     font-size: 16px;
     line-height: 1.5;
 }
-
-/* Responsividade */
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-}
-
 
 /* CSS para imagens inicialmente reduzidas */
 .exemploCross .imagem-container img {
@@ -312,6 +291,38 @@ select option {
     transform: translate(-50%, -50%);
 }
 
+.wrapper {
+    display: flex; /* Para garantir que as imagens fiquem na mesma linha horizontal */
+}
+
+.items {
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.item {
+    width: auto;
+    height: auto; /* Para permitir que a altura seja ajustada automaticamente */
+    transition: transform 0.3s ease;
+    filter: grayscale(100%);
+    object-fit: cover;
+}
+
+/* Efeito de transição ao passar o mouse */
+.item:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+/* Efeito de transição ao clicar na imagem */
+.item:active {
+    transform: scale(1.2);
+}
+
+
 /* Efeito de transição ao passar o mouse */
 .exemploCross .imagem-container img:hover {
     transform: scale(1.1);
@@ -323,6 +334,7 @@ select option {
 .exemploCross .imagem-container img:active {
     transform: scale(1.2);
 }
+
 .exemploCross .imagem-container {
     display: inline-block;
     width: calc(100% / 10 - 10px);
@@ -354,3 +366,97 @@ select option {
 .exemploCross .fechar:hover {
     color: red;
 }
+
+:root {
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(0.1, 0.7, 0, 1);
+}
+
+.items {
+    display: flex;
+    gap: 0.4rem;
+    perspective: calc(var(--index) * 35);
+}
+
+.item {
+    width: calc(var(--index) * 3);
+    height: calc(var(--index) * 12);
+    background-color: #222;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    filter: grayscale(1) brightness(0.5);
+    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+    will-change: transform, filter, rotateY, width;
+}
+
+.item::before, .item::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    right: calc(var(--index) * -1);
+} 
+
+.item::after {
+    left: calc(var(--index));
+}
+
+.items .item:hover {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 10));
+}
+
+.items .item:hover + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    z-index: -1;
+}
+
+.items .item:hover + * + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+    z-index: -2;
+}
+
+.items .item:hover + * + * + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+    z-index: -4;
+}
+
+.items .item:hover + * + * + * + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 0.6)) rotateY(15deg);
+    z-index: -2;
+}
+
+.items .item:has(+ :hover) {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+}
+
+.items .item:has(+ * :hover) {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+}
+
+.items .item:has(+ * + * :hover) {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+}
+
+.items .item:has(+ *  + * + *:hover) {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 0.6)) rotateY(-15deg);
+}
+
+.items .item:active, .items .item:focus {
+    width: 28vw;
+    z-index: 100;
+    transform: translateZ(calc(var(--index) * 10));
+    margin: 0 0.45vw;
+}
+
+
+
