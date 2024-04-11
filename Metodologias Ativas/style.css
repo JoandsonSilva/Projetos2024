@@ -25,6 +25,7 @@ a.menu {
     background-color: rgb(20, 20, 20);
     text-align: right;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.371);
+    padding: 30px;
 }
 
 .titulo-pag {
@@ -136,6 +137,7 @@ video {
 .logo img {
     width: 7%;
     margin: 10px;
+    position: absolute;
 }
 
 .navbar {
@@ -221,7 +223,7 @@ footer {
     margin-bottom: 20px;  
 }
 
-.aula {
+.aula{
     margin-bottom: 20px;
     display: none;
     /* Inicialmente, todas as aulas estão ocultas */
@@ -466,4 +468,67 @@ select option {
     display: flex;
     vertical-align: top; /* Para alinhar os elementos verticalmente */
     flex-direction: row; /* Para garantir que os elementos fiquem na mesma linha horizontal */
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 100%; /* Certifica-se de que a largura máxima seja 100% */
+    margin: 20px auto; /* Define as margens horizontalmente para centralizar o conteúdo */
+    padding: 10px;
+    box-sizing: border-box; /* Certifica-se de que a largura inclua o padding */
+}
+
+.topicos {
+    margin-bottom: 20px;
+}
+
+.aula {
+    margin-bottom: 10px;
+    display: none;
+    
+}
+
+/* Adicionando regra de mídia para telas menores */
+@media screen and (max-width: 768px) {
+    /* Ajuste do menu */
+    .nav-bar {
+        text-align: center;
+    }
+
+    a.menu {
+        padding: 10px; /* Reduzindo o padding dos itens do menu */
+    }
+
+    /* Ajuste do título */
+    .titulo-pag {
+        text-align: center;
+    }
+
+    /* Ajuste do vídeo */
+    .video {
+        display: block;
+    }
+
+    video {
+        width: 100%; /* O vídeo ocupará toda a largura do contêiner */
+    }
+
+    .bike {
+        display: none; /* Ocultando a imagem da bicicleta em telas menores */
+    }
+
+    /* Ajuste do background */
+    .bg {
+        display: none; /* Ocultando o background em telas menores */
+    }
+}
+
+
+
+.listasinterna{
+    list-style-type: circle;
+    text-decoration: dotted;
+    line-height: 30px;
 }
