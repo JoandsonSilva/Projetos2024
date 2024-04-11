@@ -230,14 +230,6 @@ footer {
 }
 
 /* Botões de seleção e opção */
-select {
-    padding: 10px;
-    border-radius: 20px;
-    border: 1px solid #00b7ff;
-    outline: none;
-    width: 100%;
-    max-width: 300px;
-}
 
 select option {
     padding: 10px;
@@ -487,7 +479,7 @@ select option {
 .aula {
     margin-bottom: 10px;
     display: none;
-    
+   
 }
 
 /* Adicionando regra de mídia para telas menores */
@@ -525,10 +517,73 @@ select option {
     }
 }
 
-
-
 .listasinterna{
     list-style-type: circle;
     text-decoration: dotted;
     line-height: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.menu-lateral .tipo-aula {
+    background-color: transparent; /* Cor de fundo transparente */
+    color: white; /* Cor do texto */
+    border: none; /* Remover borda */
+    padding: 10px 15px; /* Espaçamento interno */
+    cursor: pointer; /* Alterar o cursor para indicar interatividade */
+    transition: background-color 0.3s, color 0.3s; /* Adicionar uma transição suave */
+    border-radius: 5px; /* Adicionar bordas arredondadas */
+}
+.menu-lateral .tipo-aula{
+    background-color: #222;
+    margin-top: 10px;
+}
+.menu-lateral .tipo-aula:hover {
+    background-color: #0099ff; /* Alterar cor de fundo ao passar o mouse */
+}
+
+.menu-lateral .submenu {
+    display: none; /* Ocultar submenu por padrão */
+    position: absolute; /* Posicionar de forma absoluta */
+    top: calc(100% + 10px); /* Posicionar abaixo do botão */
+    left: 0; /* Alinhar à esquerda do botão */
+    background-color: #0195f0; /* Cor de fundo */
+    border: 1px solid #00b7ff; /* Adicionar uma borda */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Adicionar bordas arredondadas */
+    z-index: 100; /* Garantir que esteja acima dos outros elementos */
+}
+
+.menu-lateral .submenu button {
+    display: block;
+    margin-bottom: 5px; /* Ajuste a margem inferior conforme necessário */
+    background-color: transparent; /* Cor de fundo transparente */
+    color: #00b7ff; /* Cor do texto */
+    border: none; /* Remover borda */
+    padding: 5px; /* Espaçamento interno */
+    cursor: pointer; /* Alterar o cursor para indicar interatividade */
+    transition: background-color 0.3s, color 0.3s; /* Adicionar uma transição suave */
+    border-radius: 5px; /* Adicionar bordas arredondadas */
+}
+
+.menu-lateral .submenu button:hover {
+    background-color: #1088ff; /* Alterar cor de fundo ao passar o mouse */
+    color: #343a40; /* Alterar cor do texto ao passar o mouse */
+}
+
+select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #00b7ff;
+    outline: none;
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    margin-top: 10px;
 }
