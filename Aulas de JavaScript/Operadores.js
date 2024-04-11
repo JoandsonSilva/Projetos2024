@@ -101,4 +101,20 @@ botaoAdicionarAula.addEventListener('click', function() {
 
 function expandImage(img) {
     img.classList.toggle("expanded");
+
+
+}
+
+
+function mostrarAula() {
+    var opcoesTema = document.getElementById("opcoesTema").value;
+    var aulas = document.getElementsByClassName("aula");
+    for (var i = 0; i < aulas.length; i++) {
+        aulas[i].style.display = "none";
+    }
+
+    var aulaSelecionada = document.querySelector("." + opcoesTema);
+    if (aulaSelecionada) {
+        aulaSelecionada.style.display = "block";
+    }
 }

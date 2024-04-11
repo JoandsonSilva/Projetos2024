@@ -211,8 +211,8 @@ footer {
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 20px;
     padding: 10px;
 }
 
@@ -247,12 +247,14 @@ select option {
 .aula .detalhes,
 .aula .habilidades,
 .aula .papelProfessor,
+
+
 .aula .exemploCross {
-    background-color: #f0f0f085;
+    background-color: #fffffff2;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 5px 5px 5px #00000042;
+    box-shadow: 5px 5px 5px #292929;
 }
 
 .aula h3 {
@@ -293,6 +295,7 @@ select option {
 
 .wrapper {
     display: flex; /* Para garantir que as imagens fiquem na mesma linha horizontal */
+    justify-content: center;
 }
 
 .items {
@@ -459,4 +462,8 @@ select option {
 }
 
 
-
+.topicos, #topicosAula {
+    display: flex;
+    vertical-align: top; /* Para alinhar os elementos verticalmente */
+    flex-direction: row; /* Para garantir que os elementos fiquem na mesma linha horizontal */
+}
