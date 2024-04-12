@@ -131,8 +131,16 @@ video {
 
 .aulas {
     line-height: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+
 }
+
 
 .logo img {
     width: 7%;
@@ -196,21 +204,20 @@ video {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
+    position: relative; /* Alterado para posição relativa */
     text-align: center;
-    margin: 0px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(1, 25, 46);
     width: 100%;
-    color: white;
+    color: rgb(255, 255, 255);
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    border-top: 2px solid rgba(0, 119, 255, 0.514);
-    box-shadow: 0px -5px 10px rgba(0, 136, 255, 0.216);
+    box-shadow: 0px -5px 10px rgba(151, 151, 151, 0.216);
+    margin-top: auto; /* Margem superior automática para empurrar para o final da página */
 }
+
 
 .container {
     width: 100%;
@@ -244,11 +251,11 @@ select option {
 
 
 .aula .exemploCross {
-    background-color: #fffffff2;
+    background-color: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 5px 5px 5px #292929;
+    box-shadow: 5px 5px 5px #2929296f;
 }
 
 .aula h3 {
@@ -580,10 +587,107 @@ select option {
 select {
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid #00b7ff;
+    border: 1px solid #0088ff77;
     outline: none;
     width: 100%;
     max-width: 200px;
     display: flex;
     margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.menu-lateral{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.topicos{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    margin-right: 20px; /* Adiciona espaçamento entre a logo e o menu */
+    align-self: center; /* Alinha verticalmente a imagem ao centro */
+    width: 6%;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li:first-child {
+    margin-left: 0;
+}
+
+.menu li a {
+    display: inline-block; /* Garante que os links do menu fiquem na mesma linha */
+    padding: 10px; /* Adiciona espaço interno para os links */
+    text-decoration: none; /* Remove a decoração de texto padrão */
+    color: #ffffff; /* Cor do texto */
+    
+}
+
+h3{
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+.linha{
+    border-top:  1px solid #0088ff;
+}
+
+.habilidades .habilidade1 {
+    list-style-type: none; /* Remover os marcadores padrão da lista */
+    padding: 0; /* Remover o espaçamento interno padrão da lista */
+}
+
+.habilidades .habilidade1 li {
+    margin-bottom: 5px; /* Adicionar espaçamento entre os itens da lista */
+    padding-left: 20px; /* Adicionar espaço para os marcadores */
+    position: relative; /* Definir a posição dos marcadores personalizados */
+    display: block; /* Exibir os itens da lista em blocos, um abaixo do outro */
+}
+
+.habilidades .habilidade1 li::before {
+    content: ""; /* Adicionar o marcador personalizado */
+    position: absolute; /* Definir a posição do marcador personalizado */
+    left: 0; /* Posicionar o marcador personalizado à esquerda */
+    top: 50%; /* Posicionar o marcador personalizado no centro vertical */
+    transform: translateY(-50%); /* Alinhar o marcador personalizado verticalmente */
+    border: 2px solid #000; /* Adicionar uma borda ao marcador personalizado */
+    border-radius: 50%; /* Definir o formato de círculo */
+    margin-right: 10px; /* Adicionar espaço entre o marcador personalizado e o texto */
+}
+
+
+.wrapper{
+    background-color: #b3d6f54f;
 }
