@@ -691,3 +691,25 @@ h3{
 .wrapper{
     background-color: #b3d6f54f;
 }
+.firstpag:hover{
+    padding: 15px 30px;
+    color: rgba(255, 255, 255, 0.537);
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 50px;
+    transition: background-color 0.9s ease;
+    box-shadow: 0 0 10px #F2CA99;
+    border: 2px solid #F2E2C4;
+    border-style: solid;
+    display: flex;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
+    border-radius: 50em;
+    border: 3px solid transparent;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+    animation: rotateGradient 5s linear infinite;
+}
