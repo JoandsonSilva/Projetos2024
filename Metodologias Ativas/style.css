@@ -689,7 +689,8 @@ h3{
 
 
 .wrapper{
-    background-color: #b3d6f54f;
+    background-color: #ffffffea;
+    border: 1px solid rgba(39, 39, 41, 0.21);
 }
 .firstpag:hover{
     padding: 15px 30px;
@@ -725,4 +726,13 @@ h5{
     color: #012943;
     line-height: 40px;
     
+}
+
+
+span{
+    font-weight: bold;
+}
+
+p{
+    margin: 10px;
 }
