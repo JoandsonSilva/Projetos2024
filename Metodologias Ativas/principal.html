@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
     
     <link rel="stylesheet" href="stylep.css">
+    <link rel="stylesheet" href="stylep.css">
 </head>
 <body>
  
@@ -52,5 +53,30 @@
             });
         });
     </script>
+
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDPklniBzF-8qfs2PDFqiq1cqA1UUnDTxo",
+      authDomain: "metodologias-ativas-f27fd.firebaseapp.com",
+      projectId: "metodologias-ativas-f27fd",
+      storageBucket: "metodologias-ativas-f27fd.appspot.com",
+      messagingSenderId: "996362135793",
+      appId: "1:996362135793:web:d03907eb28f7590cdb6150",
+      measurementId: "G-SFQRGD6MSQ"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </body>
 </html>

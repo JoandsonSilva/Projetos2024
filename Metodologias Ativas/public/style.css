@@ -1,0 +1,745 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li, ul {
+    list-style-type: none;
+    display: inline-block; 
+}
+
+ul {
+    height: 30px;
+    padding: 20px;  
+}
+
+a.menu {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-right: 50px;   
+}
+
+.nav-bar {
+    background-color: rgb(20, 20, 20);
+    text-align: right;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.371);
+    padding: 30px;
+}
+
+.titulo-pag {
+    text-align: left;
+    display: flex;
+}
+
+nav {
+    position: relative;
+    text-align: center;
+    margin-top: 0;
+}
+
+h2 {
+    text-align: left;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    text-align: center;
+}
+
+a:hover {
+    border-bottom: 1px solid orangered;
+    color: chocolate;
+}
+
+.saiba {
+    color: blue;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 40px;
+}
+
+.textos {
+    line-height: 27px;
+    text-align: justify;
+    display: flex;
+}
+
+.principal {
+    width: 80%; 
+    margin: 20px;  
+}
+
+.video {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+video {
+    width: 70%;
+}
+
+.bike {
+    width: 8%;
+    margin: -3px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    animation: go-back 11s infinite alternate;
+    position: absolute;
+}
+
+@keyframes go-back {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(1000px);
+    }
+}
+
+.bg {
+    width: 120%;
+    height: 80px;
+    margin-bottom: auto;
+    z-index: -1;
+    overflow: hidden;
+    opacity: 0.3;
+    background-image: url('https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_1280.png');
+    background-repeat: repeat-x;
+    background-repeat: repeat ;
+    position: relative;
+    background-position: center center;
+    left: 0;
+    animation: moveBackground 10s linear infinite; 
+}
+
+@keyframes moveBackground {
+    0% {
+       transform: translateX(0%);
+    }
+    100% {
+       transform: translateX(-19%);
+    }
+}
+
+.aulas {
+    line-height: 25px;
+    font-family:'Times New Roman', Times, serif;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+
+.logo img {
+    width: 7%;
+    margin: 10px;
+    position: absolute;
+}
+
+.navbar {
+    background-color: #000000;
+    padding: 20px 20px; /* Ajustado o padding */
+    display: flex;
+    align-items: center;
+    top: 0;
+    z-index: 1000; /* Garante que o navbar esteja acima do conteúdo */
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: start;
+    text-decoration: noneS;
+    margin-left: 30px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    padding-right: 20px;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px; /* Ajustado o padding */
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    position: relative; /* Alterado para posição relativa */
+    text-align: center;
+    background-color: rgb(1, 25, 46);
+    width: 100%;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0px -5px 10px rgba(151, 151, 151, 0.216);
+    margin-top: auto; /* Margem superior automática para empurrar para o final da página */
+}
+
+
+.container {
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.topicos {
+    margin-top: 20px;
+    margin-bottom: 20px;  
+}
+
+.aula{
+    margin-bottom: 20px;
+    display: none;
+    /* Inicialmente, todas as aulas estão ocultas */
+}
+
+/* Botões de seleção e opção */
+
+select option {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Estilizando os detalhes das aulas */
+.aula .resumo,
+.aula .detalhes,
+.aula .habilidades,
+.aula .papelProfessor,
+
+
+.aula .exemploCross {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px #2929296f;
+}
+
+.aula h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.aula h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.aula p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* CSS para imagens inicialmente reduzidas */
+.exemploCross .imagem-container img {
+    width: auto;
+    height: 100%;
+    transition: transform 0.3s ease;
+    filter: grayscale(100%);
+    object-fit: cover;
+}
+
+/* CSS para imagens expandidas */
+.exemploCross .imagem-container.expandida img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper {
+    display: flex; /* Para garantir que as imagens fiquem na mesma linha horizontal */
+    justify-content: center;
+}
+
+.items {
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.item {
+    width: auto;
+    height: auto; /* Para permitir que a altura seja ajustada automaticamente */
+    transition: transform 0.3s ease;
+    filter: grayscale(100%);
+    object-fit: cover;
+}
+
+/* Efeito de transição ao passar o mouse */
+.item:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+/* Efeito de transição ao clicar na imagem */
+.item:active {
+    transform: scale(1.2);
+}
+
+
+/* Efeito de transição ao passar o mouse */
+.exemploCross .imagem-container img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+/* Efeito de transição ao clicar na imagem */
+.exemploCross .imagem-container img:active {
+    transform: scale(1.2);
+}
+
+.exemploCross .imagem-container {
+    display: inline-block;
+    width: calc(100% / 10 - 10px);
+    margin-right: 10px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.exemploCross .imagem-container.expandida {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    max-width: 80%; /* Ajuste o tamanho máximo da imagem expandida */
+    max-height: 80%; /* Ajuste a altura máxima da imagem expandida */
+}
+
+.exemploCross .fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.exemploCross .fechar:hover {
+    color: red;
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(0.1, 0.7, 0, 1);
+}
+
+.items {
+    display: flex;
+    gap: 0.4rem;
+    perspective: calc(var(--index) * 35);
+}
+
+.item {
+    width: calc(var(--index) * 3);
+    height: calc(var(--index) * 12);
+    background-color: #222;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    filter: grayscale(1) brightness(0.5);
+    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+    will-change: transform, filter, rotateY, width;
+}
+
+.item::before, .item::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    right: calc(var(--index) * -1);
+} 
+
+.item::after {
+    left: calc(var(--index));
+}
+
+.items .item:hover {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 10));
+}
+
+.items .item:hover + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    z-index: -1;
+}
+
+.items .item:hover + * + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+    z-index: -2;
+}
+
+.items .item:hover + * + * + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+    z-index: -4;
+}
+
+.items .item:hover + * + * + * + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 0.6)) rotateY(15deg);
+    z-index: -2;
+}
+
+.items .item:has(+ :hover) {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+}
+
+.items .item:has(+ * :hover) {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+}
+
+.items .item:has(+ * + * :hover) {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+}
+
+.items .item:has(+ *  + * + *:hover) {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 0.6)) rotateY(-15deg);
+}
+
+.items .item:active, .items .item:focus {
+    width: 28vw;
+    z-index: 100;
+    transform: translateZ(calc(var(--index) * 10));
+    margin: 0 0.45vw;
+}
+
+
+.topicos, #topicosAula {
+    display: flex;
+    vertical-align: top; /* Para alinhar os elementos verticalmente */
+    flex-direction: row; /* Para garantir que os elementos fiquem na mesma linha horizontal */
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 100%; /* Certifica-se de que a largura máxima seja 100% */
+    margin: 20px auto; /* Define as margens horizontalmente para centralizar o conteúdo */
+    padding: 10px;
+    box-sizing: border-box; /* Certifica-se de que a largura inclua o padding */
+}
+
+.topicos {
+    margin-bottom: 20px;
+}
+
+.aula {
+    margin-bottom: 10px;
+    display: none;
+   
+}
+
+/* Adicionando regra de mídia para telas menores */
+@media screen and (max-width: 768px) {
+    /* Ajuste do menu */
+    .nav-bar {
+        text-align: center;
+    }
+
+    a.menu {
+        padding: 10px; /* Reduzindo o padding dos itens do menu */
+    }
+
+    /* Ajuste do título */
+    .titulo-pag {
+        text-align: center;
+    }
+
+    /* Ajuste do vídeo */
+    .video {
+        display: block;
+    }
+
+    video {
+        width: 100%; /* O vídeo ocupará toda a largura do contêiner */
+    }
+
+    .bike {
+        display: none; /* Ocultando a imagem da bicicleta em telas menores */
+    }
+
+    /* Ajuste do background */
+    .bg {
+        display: none; /* Ocultando o background em telas menores */
+    }
+}
+
+.listasinterna{
+    list-style-type: circle;
+    text-decoration: dotted;
+    line-height: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.menu-lateral .tipo-aula {
+    background-color: transparent; /* Cor de fundo transparente */
+    color: white; /* Cor do texto */
+    border: none; /* Remover borda */
+    padding: 10px 15px; /* Espaçamento interno */
+    cursor: pointer; /* Alterar o cursor para indicar interatividade */
+    transition: background-color 0.3s, color 0.3s; /* Adicionar uma transição suave */
+    border-radius: 5px; /* Adicionar bordas arredondadas */
+}
+.menu-lateral .tipo-aula{
+    background-color: #222;
+    margin-top: 10px;
+}
+.menu-lateral .tipo-aula:hover {
+    background-color: #0099ff; /* Alterar cor de fundo ao passar o mouse */
+}
+
+.menu-lateral .submenu {
+    display: none; /* Ocultar submenu por padrão */
+    position: absolute; /* Posicionar de forma absoluta */
+    top: calc(100% + 10px); /* Posicionar abaixo do botão */
+    left: 0; /* Alinhar à esquerda do botão */
+    background-color: #0195f0; /* Cor de fundo */
+    border: 1px solid #00b7ff; /* Adicionar uma borda */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Adicionar bordas arredondadas */
+    z-index: 100; /* Garantir que esteja acima dos outros elementos */
+}
+
+.menu-lateral .submenu button {
+    display: block;
+    margin-bottom: 5px; /* Ajuste a margem inferior conforme necessário */
+    background-color: transparent; /* Cor de fundo transparente */
+    color: #00b7ff; /* Cor do texto */
+    border: none; /* Remover borda */
+    padding: 5px; /* Espaçamento interno */
+    cursor: pointer; /* Alterar o cursor para indicar interatividade */
+    transition: background-color 0.3s, color 0.3s; /* Adicionar uma transição suave */
+    border-radius: 5px; /* Adicionar bordas arredondadas */
+}
+
+.menu-lateral .submenu button:hover {
+    background-color: #1088ff; /* Alterar cor de fundo ao passar o mouse */
+    color: #343a40; /* Alterar cor do texto ao passar o mouse */
+}
+
+select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #0088ff77;
+    outline: none;
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.menu-lateral{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.topicos{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    margin-right: 20px; /* Adiciona espaçamento entre a logo e o menu */
+    align-self: center; /* Alinha verticalmente a imagem ao centro */
+    width: 6%;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li:first-child {
+    margin-left: 0;
+}
+
+.menu li a {
+    display: inline-block; /* Garante que os links do menu fiquem na mesma linha */
+    padding: 10px; /* Adiciona espaço interno para os links */
+    text-decoration: none; /* Remove a decoração de texto padrão */
+    color: #ffffff; /* Cor do texto */
+    
+}
+
+h3{
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+.linha{
+    border-top:  1px solid #0088ff;
+}
+
+.habilidades .habilidade1 {
+    list-style-type: none; /* Remover os marcadores padrão da lista */
+    padding: 0; /* Remover o espaçamento interno padrão da lista */
+}
+
+.habilidades .habilidade1 li {
+    margin-bottom: 5px; /* Adicionar espaçamento entre os itens da lista */
+    padding-left: 20px; /* Adicionar espaço para os marcadores */
+    position: relative; /* Definir a posição dos marcadores personalizados */
+    display: block; /* Exibir os itens da lista em blocos, um abaixo do outro */
+}
+
+.habilidades .habilidade1 li::before {
+    content: ""; /* Adicionar o marcador personalizado */
+    position: absolute; /* Definir a posição do marcador personalizado */
+    left: 0; /* Posicionar o marcador personalizado à esquerda */
+    top: 50%; /* Posicionar o marcador personalizado no centro vertical */
+    transform: translateY(-50%); /* Alinhar o marcador personalizado verticalmente */
+    border: 2px solid #000; /* Adicionar uma borda ao marcador personalizado */
+    border-radius: 50%; /* Definir o formato de círculo */
+    margin-right: 10px; /* Adicionar espaço entre o marcador personalizado e o texto */
+}
+
+
+.wrapper{
+    background-color: #ffffffea;
+    border: 1px solid rgba(39, 39, 41, 0.21);
+}
+.firstpag:hover{
+    padding: 15px 30px;
+    color: rgba(255, 255, 255, 0.537);
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 50px;
+    transition: background-color 0.9s ease;
+    box-shadow: 0 0 10px #F2CA99;
+    border: 2px solid #F2E2C4;
+    border-style: solid;
+    display: flex;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
+    border-radius: 50em;
+    border: 3px solid transparent;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+    animation: rotateGradient 5s linear infinite;
+}
+
+
+spam{
+    font-weight: bold; font-size: 14px;
+}
+
+h5{
+    font: bold;
+    font-size: 16px;
+    color: #012943;
+    line-height: 40px;
+    
+}
+
+
+span{
+    font-weight: bold;
+}
+
+p{
+    margin: 10px;
+}
+
+
+.listas{
+list-style-position:inside;
+list-style-type: decimal;
+list-style: armenian; color: black;
+}
