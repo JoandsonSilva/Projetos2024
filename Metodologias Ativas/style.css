@@ -736,3 +736,10 @@ span{
 p{
     margin: 10px;
 }
+
+
+.listas{
+list-style-position:inside;
+list-style-type: decimal;
+list-style: armenian; color: black;
+}

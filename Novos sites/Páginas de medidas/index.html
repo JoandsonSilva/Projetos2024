@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Medidas CSS, HTML e JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%; border-collapse: collapse; margin-top: 20px;   }
+        th, td {
+            border: 1px solid #503232; padding: 8px; text-align: left;}
+        th {
+            background-color: #4b0303; color: white;}
+        tr:nth-child(even) {
+            background-color: #f9f9f9; }
+    </style>
+</head>
+<body>
+    <h1>Tabela de Medidas CSS, HTML e JavaScript</h1>
+    <table>
+        <tr>
+            <th>Medida</th>
+            <th>Descrição</th>
+            <th>Uso Comum</th>
+        </tr>
+        <tr>
+            <td>px (pixels)</td>
+            <td>Unidade de medida que representa um único ponto na tela do dispositivo.</td>
+            <td>Utilizada para definir tamanhos exatos, como largura e altura de elementos.</td>
+        </tr>
+        <tr>
+            <td>em</td>
+            <td>Unidade relativa que é baseada no tamanho da fonte do elemento pai. 1em é igual ao tamanho da fonte do elemento pai.</td>
+            <td>Comumente usada para definir tamanhos de fonte e espaçamentos que são relativos ao tamanho do texto.</td>
+        </tr>
+        <tr>
+            <td>rem (root em)</td>
+            <td>Unidade relativa que é baseada no tamanho da fonte do elemento raiz (html). 1rem é igual ao tamanho da fonte definida no elemento html.</td>
+            <td>Utilizada para criar layouts consistentes que são independentes do contexto de aninhamento.</td>
+        </tr>
+        <tr>
+            <td>% (porcentagem)</td>
+            <td>Unidade relativa que representa uma porcentagem do tamanho do elemento pai.</td>
+            <td>Utilizada para definir tamanhos fluidos que se ajustam ao tamanho do elemento pai.</td>
+        </tr>
+        <tr>
+            <td>vh (viewport height)</td>
+            <td>Unidade relativa que representa 1% da altura da viewport (área visível do navegador).</td>
+            <td>Utilizada para definir tamanhos que se ajustam à altura da janela do navegador.</td>
+        </tr>
+        <tr>
+            <td>vw (viewport width)</td>
+            <td>Unidade relativa que representa 1% da largura da viewport (área visível do navegador).</td>
+            <td>Utilizada para definir tamanhos que se ajustam à largura da janela do navegador.</td>
+        </tr>
+        <tr>
+            <td>vmin</td>
+            <td>Unidade relativa que representa 1% do menor valor entre a altura e a largura da viewport.</td>
+            <td>Utilizada para definir tamanhos que são proporcionais à menor dimensão da viewport.</td>
+        </tr>
+        <tr>
+            <td>vmax</td>
+            <td>Unidade relativa que representa 1% do maior valor entre a altura e a largura da viewport.</td>
+            <td>Utilizada para definir tamanhos que são proporcionais à maior dimensão da viewport.</td>
+        </tr>
+        <tr>
+            <td>pt (points)</td>
+            <td>Unidade de medida tradicionalmente usada na impressão. 1pt é igual a 1/72 de uma polegada.</td>
+            <td>Menos comum na web, mas pode ser usada para definir tamanhos de texto em PDFs e outros documentos impressos.</td>
+        </tr>
+        <tr>
+            <td>cm (centímetros)</td>
+            <td>Unidade de medida que representa um centímetro real. 1cm é igual a 37.8 pixels.</td>
+            <td>Utilizada para definir tamanhos físicos de elementos, principalmente em impressão.</td>
+        </tr>
+        <tr>
+            <td>mm (milímetros)</td>
+            <td>Unidade de medida que representa um milímetro real. 1mm é igual a 3.78 pixels.</td>
+            <td>Utilizada para definir tamanhos físicos de elementos, principalmente em impressão.</td>
+        </tr>
+        <tr>
+            <td>in (inches)</td>
+            <td>Unidade de medida que representa uma polegada real. 1in é igual a 96 pixels.</td>
+            <td>Utilizada para definir tamanhos físicos de elementos, principalmente em impressão.</td>
+        </tr>
+    </table>
+</body>
+</html>

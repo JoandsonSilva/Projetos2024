@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    
+    
+}
+
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2018/08/21/23/29/forest-3622519_1280.jpg');
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+}
+
+
+div{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    height: 700px;
+}
+
+h1{
+font-size: 95px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, ;
+width: 100%;
+text-align: center;
+color: rgba(8, 26, 0, 0.956);
+}
+
+h4{
+    font-size: 30px;
+    color: rgb(18, 5, 5);
+    display: flex;
+    margin: auto;
+    margin-top: -300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 27px;
+
+}
