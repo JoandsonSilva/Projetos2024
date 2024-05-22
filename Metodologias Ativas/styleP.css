@@ -30,7 +30,7 @@
         display: flex;
     }
 
-    .logo img{
+    .logo img {
         width: 40px;
         margin: 10px;
     }
@@ -70,7 +70,7 @@
         }
     }
 
-    
+
 
     footer {
         position: fixed;
@@ -176,7 +176,7 @@
     a:hover {
         border-bottom: 1px solid orangered;
         color: chocolate;
-        
+
     }
 
     .logo:hover {
@@ -192,7 +192,7 @@
         width: 40px;
         margin: 0;
         padding: 0;
-        
+
     }
 
     .image-container {
@@ -214,20 +214,20 @@
         /* Definir a largura do menu para auto */
     }
 
-    .firstpag{
+    .firstpag {
         margin-right: 50px;
-        
+
     }
 
-    .firstpag:hover{
+    .firstpag:hover {
         background-color: #0066ff21;
-        
+
         padding: 18px;
         border-radius: 40px;
-       
+
     }
 
-    .firstpag:hover{
+    .firstpag:hover {
         padding: 15px 30px;
         color: rgba(255, 255, 255, 0.537);
         text-decoration: none;
@@ -249,3 +249,24 @@
         cursor: pointer;
         animation: rotateGradient 5s linear infinite;
     }
+
+
+#construção {
+        color: white;
+    z-index: 200px;
+    margin: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+
+.divi{
+    position: absolute;
+    color: white;
+    margin: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

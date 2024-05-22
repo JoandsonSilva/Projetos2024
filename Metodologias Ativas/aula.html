@@ -18,7 +18,7 @@
         <ul class="menu">
             <li><a class="firstpag" href="aula.html">Aulas</a></li>
             <li><a class="firstpag" href="index.html">Metodologias</a></li>
-            <li><a class="firstpag" href="recurso.html">Recursos</a></li>
+            <li><a class="firstpag" href="#">Recursos</a></li>
             <li><a class="firstpag" href="contato.html">Contato</a></li>
         </ul>
     </div>
@@ -29,17 +29,17 @@
             <div class="nalinha">
                 <h2>Selecione o Tipo de Aula:</h2>
                 <!-- Botões para seleção do tipo de aula -->
-                <button class="tipo-aula" data-tipo="hibrida">Aula Híbrida</button>
-                <button class="tipo-aula" data-tipo="rotacao">Aula com Rotação</button>
-                <button class="tipo-aula" data-tipo="invertida">Aula com Sala Invertida</button>
+                <button class="tipo-aula" data-tipo="progressao">Progressão Prática</button>
+                <button class="tipo-aula" data-tipo="rotacao">Rotação por Estações</button>
+                <button class="tipo-aula" data-tipo="invertida">Sala de Aula Invertida</button>
             </div>
 
             <div class="submenu">
                 <select id="tipoAula">
                     <option value="">Selecione o tipo de aula</option>
-                    <option value="hibrida">Aula Híbrida</option>
-                    <option value="rotacao">Aula com Rotação</option>
-                    <option value="invertida">Aula com Sala Invertida</option>
+                    <option value="progressao">Progressão Prática</option>
+                    <option value="rotacao">Rotação por Estações</option>
+                    <option value="invertida">Sala de Aula Invertida</option>
                 </select>
             </div>
 
@@ -59,9 +59,9 @@
 
     <div class="aulas">
 
-        <!-- Aulas de Aula Híbrida -->
+        <!-- Aulas de Aula Invertida -->
         <div class="aulaH aula Cibersegurança">
-            <h3>Aula Híbrida</h3>
+            <h3>Sala de Aula Invertida</h3>
             <!-- Conteúdo da aula híbrida -->
 
             <div class="resumo">
@@ -925,9 +925,9 @@
 
             // Definir os temas com base no tipo de aula selecionado
             switch (tipoAula) {
-                case "hibrida":
+                case "progressao":
                     // Definir os temas para aula híbrida
-                    temas = ["Aulas Híbridas", "em_construção", "", ""];
+                    temas = ["Aulas de Progressão", "em_construção", "", ""];
                     break;
                 case "rotacao":
                     // Definir os temas para aula com rotação
@@ -935,7 +935,7 @@
                     break;
                 case "invertida":
                     // Definir os temas para aula com sala invertida
-                    temas = ["Sala de aula Invertida", "Cibersegurança", "", ""];
+                    temas = ["Sala de Aula Invertida", "Cibersegurança", "", ""];
                     break;
             }
 
