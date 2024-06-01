@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de JavaScript</title>
+</head>
+
+<body>
+    <h1>Exercícios de JavaScript</h1>
+
+    <!-- Formulário para entrada de dados -->
+    <form id="formExercicio1">
+        <!-- Campo de entrada para o palpite -->
+        <label for="palpite">1. Tente adivinhar o número (entre 1 e 100):</label>
+        <input type="number" id="palpite1" min="1" max="100">
+        <button type="submit">Enviar Palpite</button>
+    </form>
+
+    <!-- Div para exibir resultados -->
+    <div id="resultados1"></div>
+
+    <script>
+        // Função para adicionar uma mensagem na página
+        function adicionarMensagem1(mensagem) {
+            document.getElementById("resultados1").innerHTML += "<p>" + mensagem + "</p>";
+        }
+
+        // Função para processar o palpite do usuário
+        function processarPalpite1(event) {
+            event.preventDefault(); // Evitar o envio do formulário
+
+            // Capturar o palpite do usuário do campo de entrada
+            var palpite = parseInt(document.getElementById("palpite1").value);
+            
+            // Verificar se o palpite é válido
+            if (isNaN(palpite) || palpite < 1 || palpite > 100) {
+                adicionarMensagem1("Por favor, insira um número válido entre 1 e 100.");
+                return;
+            }
+
+            // Verificar se o palpite está correto
+            if (palpite === numeroAleatorio) {
+                adicionarMensagem1("Parabéns! Você acertou o número em " + tentativas + " tentativas.");
+            } else if (palpite < numeroAleatorio) {
+                adicionarMensagem1("O número é maior. Tente novamente.");
+            } else {
+                adicionarMensagem1("O número é menor. Tente novamente.");
+            }
+        }
+
+        // Gerar um número aleatório entre 1 e 100
+        var numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+        var tentativas = 0;
+
+        // Adicionar um listener para o evento submit do formulário
+        document.getElementById("formExercicio1").addEventListener("submit", processarPalpite1);
+    </script>
+
+    <!-- Exercício 2 -->
+    <form id="formExercicio2">
+        <!-- Campo de entrada para a idade -->
+        <label for="idade">2. Digite sua idade:</label>
+        <input type="number" id="idade" min="0">
+        <button type="submit">Verificar</button>
+    </form>
+
+    <!-- Div para exibir resultados -->
+    <div id="resultados2"></div>
+
+    <script>
+        // Função para adicionar uma mensagem na página
+        function adicionarMensagem2(mensagem) {
+            document.getElementById("resultados2").innerHTML += "<p>" + mensagem + "</p>";
+        }
+
+        // Função para verificar se a idade é maior ou igual a 18 anos
+        function verificarIdade(event) {
+            event.preventDefault(); // Evitar o envio do formulário
+
+            // Capturar a idade do campo de entrada
+            var idade = parseInt(document.getElementById("idade").value);
+            
+            // Verificar se a idade é válida
+            if (isNaN(idade) || idade < 0) {
+                adicionarMensagem2("Por favor, insira uma idade válida.");
+                return;
+            }
+
+            // Verificar se a idade é maior ou igual a 18 anos
+            if (idade >= 18) {
+                adicionarMensagem2("Você é maior de idade.");
+            } else {
+                adicionarMensagem2("Você é menor de idade.");
+            }
+        }
+
+        // Adicionar um listener para o evento submit do formulário
+        document.getElementById("formExercicio2").addEventListener("submit", verificarIdade);
+    </script>
+
+    <!-- Exercício 3 -->
+    <form id="formExercicio3">
+        <!-- Campo de entrada para o número -->
+        <label for="numero">3. Digite um número:</label>
+        <input type="number" id="numero">
+        <button type="submit">Verificar</button>
+    </form>
+
+    <!-- Div para exibir resultados -->
+    <div id="resultados3"></div>
+
+    <script>
+        // Função para adicionar uma mensagem na página
+        function adicionarMensagem3(mensagem) {
+            document.getElementById("resultados3").innerHTML += "<p>" + mensagem + "</p>";
+        }
+
+        // Função para verificar se o número é positivo, negativo ou zero
+        function verificarNumero(event) {
+            event.preventDefault(); // Evitar o envio do formulário
+
+            // Capturar o número do campo de entrada
+            var numero = parseInt(document.getElementById("numero").value);
+            
+            // Verificar se o número é válido
+            if (isNaN(numero)) {
+                adicionarMensagem3("Por favor, insira um número válido.");
+                return;
+            }
+
+            // Verificar se o número é positivo, negativo ou zero
+            if (numero > 0) {
+                adicionarMensagem3("O número é positivo.");
+            } else if (numero < 0) {
+                adicionarMensagem3("O número é negativo.");
+            } else {
+                adicionarMensagem3("O número é zero.");
+            }
+        }
+
+        // Adicionar um listener para o evento submit do formulário
+        document.getElementById("formExercicio3").addEventListener("submit", verificarNumero);
+    </script>
+
+    <!-- Exercício 4 -->
+    <form id="formExercicio4">
+        <!-- Campo de entrada para o número -->
+        <label for="num1">4. Digite o primeiro número:</label>
+        <input type="number" id="num1">
+        <br>
+        <label for="num2">Digite o segundo número:</label>
+        <input type="number" id="num2">
+        <br>
+        <button type="submit">Calcular</button>
+    </form>
+
+    <!-- Div para exibir resultados -->
+    <div id="resultados4"></div>
+
+    <script>
+        // Função para adicionar uma mensagem na página
+        function adicionarMensagem4(mensagem) {
+            document.getElementById("resultados4").innerHTML += "<p>" + mensagem + "</p>";
+        }
+
+        // Função para verificar se o número é positivo, negativo ou zero
+        function calcularSoma(event) {
+            event.preventDefault(); // Evitar o envio do formulário
+
+            // Capturar os números do campo de entrada
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            
+            // Verificar se os números são válidos
+            if (isNaN(num1) || isNaN(num2)) {
+                adicionarMensagem4("Por favor, insira números válidos.");
+                return;
+            }
+
+            // Calcular a soma dos números
+            var soma = num1 + num2;
+            adicionarMensagem4("A soma de " + num1 + " e " + num2 + " é igual a " + soma + ".");
+        }
+
+        // Adicionar um listener para o evento submit do formulário
+        document.getElementById("formExercicio4").addEventListener("submit", calcularSoma);
+    </script>
+
+    <!-- Exercício 5 -->
+    <form id="formExercicio5">
+        <!-- Campo de entrada para o número -->
+        <label for="nota">5. Digite sua nota:</label>
+        <input type="number" id="nota" min="0" max="10" step="0.1">
+        <button type="submit">Verificar</button>
+    </form>
+
+    <!-- Div para exibir resultados -->
+    <div id="resultados5"></div>
+
+    <script>
+        // Função para adicionar uma mensagem na página
+        function adicionarMensagem5(mensagem) {
+            document.getElementById("resultados5").innerHTML += "<p>" + mensagem + "</p>";
+        }
+
+        // Função para verificar se a nota é suficiente para passar
+        function verificarNota(event) {
+            event.preventDefault(); // Evitar o envio do formulário
+
+            // Capturar a nota do campo de entrada
+            var nota = parseFloat(document.getElementById("nota").value);
+            
+            // Verificar se a nota é válida
+            if (isNaN(nota) || nota < 0 || nota > 10) {
+                adicionarMensagem5("Por favor, insira uma nota válida entre 0 e 10.");
+                return;
+            }
+
+            // Verificar se a nota é suficiente para passar (nota mínima: 7)
+            if (nota >= 7) {
+                adicionarMensagem5("Parabéns! Sua nota é suficiente para passar.");
+            } else {
+                adicionarMensagem5("Infelizmente sua nota não é suficiente para passar.");
+            }
+        }
+
+        // Adicionar um listener para o evento submit do formulário
+        document.getElementById("formExercicio5").addEventListener("submit", verificarNota);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Operadores.js"></script>
+</head>
+
+<body>
+    <h1>Exercícios de JavaScript</h1>
+
+    <div class="container">
+        <div id="exercicio1" class="exercicio">
+            <h2>Exercício 1: Cálculo de Juros Simples</h2>
+            <label for="principal">Valor do empréstimo:</label>
+            <input type="number" id="principal"><br>
+
+            <label for="taxa">Taxa de Juros (%):</label>
+            <input type="number" id="taxa"><br>
+
+            <label for="tempo">Período de Tempo (anos):</label>
+            <input type="number" id="tempo"><br>
+
+            <button onclick="calcularJurosSimples()">Calcular</button>
+            <p id="resultado1"></p>
+        </div>
+
+        <div id="exercicio2" class="exercicio">
+            <h2>Exercício 2: Cálculo de Área e Perímetro</h2>
+            <label for="comprimento">Comprimento:</label>
+            <input type="number" id="comprimento"><br>
+
+            <label for="largura">Largura:</label>
+            <input type="number" id="largura"><br>
+
+            <button onclick="calcularAreaEPerimetro()">Calcular</button>
+            <p id="resultado2"></p>
+        </div>
+
+        <div id="exercicio3" class="exercicio">
+            <h2>Exercício 3: Cálculo de Raiz Quadrada</h2>
+            <label for="numero">Digite um número:</label>
+            <input type="number" id="numero"><br>
+
+            <button onclick="calcularRaizQuadrada()">Calcular</button>
+            <p id="resultado3"></p>
+        </div>
+
+        <div id="exercicio4" class="exercicio">
+            <h2>Exercício 4: Tempo de Viagem</h2>
+            <label for="distancia">Distância da viagem (em km):</label>
+            <input type="number" id="distancia"><br>
+
+            <label for="velocidade">Velocidade média (em km/h):</label>
+            <input type="number" id="velocidade"><br>
+
+            <button onclick="calcularTempoViagem()">Calcular</button>
+            <p id="resultado4"></p>
+        </div>
+
+        <div id="exercicio5" class="exercicio">
+            <h2>Exercício 5: Cálculo do IMC</h2>
+            <label for="peso">Peso (em kg):</label>
+            <input type="number" id="peso"><br>
+
+            <label for="altura">Altura (em metros):</label>
+            <input type="number" id="altura"><br>
+
+            <button onclick="calcularIMC()">Calcular</button>
+            <p id="resultado5"></p>
+        </div>
+    </div>
+</body>
+
+</html>

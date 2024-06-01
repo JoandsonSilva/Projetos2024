@@ -689,7 +689,8 @@ h3{
 
 
 .wrapper{
-    background-color: #b3d6f54f;
+    background-color: #ffffffea;
+    border: 1px solid rgba(39, 39, 41, 0.21);
 }
 .firstpag:hover{
     padding: 15px 30px;
@@ -712,4 +713,33 @@ h3{
     padding: 0.5em 1.5em;
     cursor: pointer;
     animation: rotateGradient 5s linear infinite;
+}
+
+
+spam{
+    font-weight: bold; font-size: 14px;
+}
+
+h5{
+    font: bold;
+    font-size: 16px;
+    color: #012943;
+    line-height: 40px;
+    
+}
+
+
+span{
+    font-weight: bold;
+}
+
+p{
+    margin: 10px;
+}
+
+
+.listas{
+list-style-position:inside;
+list-style-type: decimal;
+list-style: armenian; color: black;
 }

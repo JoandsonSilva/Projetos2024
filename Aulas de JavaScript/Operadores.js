@@ -1,17 +1,4 @@
-// Função para mostrar o exercício com o número especificado
-function mostrarExercicio(numero) {
-    // Oculta todos os exercícios
-    let exercicios = document.querySelectorAll('.exercicio');
-    exercicios.forEach(exercicio => {
-        exercicio.style.display = 'none';
-    });
 
-    // Exibe o exercício com o número especificado
-    let exercicioAtual = document.getElementById('exercicio' + numero);
-    if (exercicioAtual) {
-        exercicioAtual.style.display = 'block';
-    }
-}
 
 // Função para calcular juros simples
 function calcularJurosSimples() {
@@ -64,57 +51,3 @@ function calcularIMC() {
     document.getElementById("resultado5").innerHTML = "Seu IMC é " + imc.toFixed(2);
 }
 
-
-// Função para adicionar uma nova aula com rotação
-function adicionarNovaAulaComRotacao() {
-    // Crie um novo elemento div para representar a nova aula
-    var novaAula = document.createElement('div');
-    novaAula.classList.add('aulaComRotação', 'aula');
-
-    // Adicione o conteúdo da nova aula
-    novaAula.innerHTML = `
-        <h3>Nova Aula com Rotação</h3>
-        <div class="resumo">
-            <h4>Resumo</h4>
-            <p>Descrição da nova aula com rotação.</p>
-        </div>
-        <!-- Adicione outras seções da aula conforme necessário -->
-    `;
-
-    // Adicione a nova aula à lista de aulas
-    document.querySelector('.aulas').appendChild(novaAula);
-}
-
-// Chame a função para adicionar uma nova aula com rotação quando necessário
-
-// Por exemplo, após um evento de clique em um botão ou após a conclusão de uma ação
-
-// Selecione o botão que adicionará a nova aula
-var botaoAdicionarAula = document.getElementById('botaoAdicionarAula');
-
-// Adicione um ouvinte de evento de clique ao botão
-botaoAdicionarAula.addEventListener('click', function() {
-    // Chame a função para adicionar a nova aula com rotação
-    adicionarNovaAulaComRotacao();
-});
-
-
-function expandImage(img) {
-    img.classList.toggle("expanded");
-
-
-}
-
-
-function mostrarAula() {
-    var opcoesTema = document.getElementById("opcoesTema").value;
-    var aulas = document.getElementsByClassName("aula");
-    for (var i = 0; i < aulas.length; i++) {
-        aulas[i].style.display = "none";
-    }
-
-    var aulaSelecionada = document.querySelector("." + opcoesTema);
-    if (aulaSelecionada) {
-        aulaSelecionada.style.display = "block";
-    }
-}

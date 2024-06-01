@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodologias Ativas</title>
+   
+    <link rel="shortcut icon" type="imagex/png" href="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/icon/05d16f9c-c375-4352-88f8-4a836ae0ea4f.png?raw=true">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    
+    <link rel="stylesheet" href="stylep.css">
+    <style>
+            * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        color: #FFFFFF;
+        background-color: #000000;
+    }
+
+    .navbar {
+        background-color: #000000;
+        padding: 20px 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #FFFFFF;
+        display: flex;
+    }
+
+    .logo img{
+        width: 40px;
+        margin: 10px;
+    }
+
+    .menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu li {
+        margin-right: 20px;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .menu {
+            margin-top: 20px;
+        }
+
+        .menu li {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+
+    
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .content {
+        max-width: 50%;
+    }
+
+    h1 {
+        font-size: 50px;
+        text-shadow: 5px 6px #2a2a2a7e;
+        border: 1px #FFB30D;
+        color: rgb(255, 255, 255);
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: justify;
+
+    }
+
+    .entrar {
+        padding: 15px 30px;
+        color: rgba(255, 255, 255, 0.537);
+        text-decoration: none;
+        font-size: 15px;
+        border-radius: 50px;
+        transition: background-color 0.9s ease;
+        box-shadow: 0 0 10px #F2CA99;
+        border: 2px solid #F2E2C4;
+        border-style: solid;
+        display: flex;
+        background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
+        border-radius: 50em;
+        border: 3px solid transparent;
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0.5em 1.5em;
+        cursor: pointer;
+        animation: rotateGradient 5s linear infinite;
+    }
+
+    @keyframes rotateGradient {
+        0% {
+            background-position: 0 50%;
+        }
+
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+
+    .entrar:hover {
+        color: #FFFFFF;
+        border: 2px solid #fbff00;
+        transform: scale(1.1);
+        transition: 0.3s ease;
+    }
+
+    .image-container {
+        width: 70%;
+        z-index: 12;
+
+    }
+
+    .image-container img {
+        width: 100%;
+        display: block;
+    }
+
+    .container {
+        margin-top: 120px;
+        margin-bottom: none;
+    }
+
+    .imagem-com-sombra {
+        filter: drop-shadow(5px 5px 10px rgba(0, 100, 122, 0.966));
+        /* Ajuste a cor e o desfoque conforme necessário */
+    }
+
+    a:hover {
+        border-bottom: 1px solid orangered;
+        color: chocolate;
+        
+    }
+
+    .logo:hover {
+        border-bottom: none;
+    }
+
+
+    .logo {
+        width: auto;
+    }
+
+    .menu {
+        width: 40px;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .image-container {
+        width: 30%;
+        /* Reduzindo o tamanho do contêiner da imagem */
+    }
+
+    .container {
+        max-width: 90%;
+        /* Ajustando o tamanho do contêiner principal */
+        margin: 120px auto;
+        /* Alinhar verticalmente o contêiner principal */
+    }
+
+    .menu {
+        margin-left: auto;
+        /* Alinhar o menu à direita */
+        width: auto;
+        /* Definir a largura do menu para auto */
+    }
+
+    .firstpag{
+        margin-right: 50px;
+        
+    }
+
+    .firstpag:hover{
+        background-color: #0066ff21;
+        
+        padding: 18px;
+        border-radius: 40px;
+       
+    }
+
+    .firstpag:hover{
+        padding: 15px 30px;
+        color: rgba(255, 255, 255, 0.537);
+        text-decoration: none;
+        font-size: 15px;
+        border-radius: 50px;
+        transition: background-color 0.9s ease;
+        box-shadow: 0 0 10px #F2CA99;
+        border: 2px solid #F2E2C4;
+        border-style: solid;
+        display: flex;
+        background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
+        border-radius: 50em;
+        border: 3px solid transparent;
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0.5em 1.5em;
+        cursor: pointer;
+        animation: rotateGradient 5s linear infinite;
+    }
+    </style>
+</head>
+<body>
+ 
+    <div class="navbar">
+        <a href="principal.html" class="logo"><img src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/icon/05d16f9c-c375-4352-88f8-4a836ae0ea4f.png?raw=true" alt=""></a>
+        <ul class="menu">
+            <li><a class="firstpag" href="aula.html">Aulas</a></li>
+            <li><a class="firstpag" href="index.html">Metodologias </a></li>
+            <li><a class="firstpag" href="#">Recursos</a></li>
+            <li><a class="firstpag" href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+  
+    <div class="container">
+        <div class="image-container imagem-com-sombra">
+            <img src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/icon/05d16f9c-c375-4352-88f8-4a836ae0ea4f.png?raw=true" alt="">
+        </div>
+        <div class="content">
+            <h1>Metodologias Ativas</h1>
+            <p>Explore novas abordagens de ensino e envolvimento com as metodologias ativas. Descubra como transformar sua sala de aula em um ambiente dinâmico e acolhedor, onde o aprendizado floresce e os(as) participantes  são inspirados a alcançar todo o seu potencial. Seja parte da revolução educacional, criando um futuro brilhante para os(as) alunos(as).</p>
+            <a href="index.html" class="entrar">Conheça</a>
+        </div>
+        
+    </div>
+    
+    <footer>
+        Creation by Joandson Silva
+    </footer>
+    <script src="javascriptprincipal.js"> </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var scrollDownBtn = document.querySelector('.scroll-down');
+
+            scrollDownBtn.addEventListener('click', function() {
+                window.scrollBy({ 
+                    top: window.innerHeight,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDPklniBzF-8qfs2PDFqiq1cqA1UUnDTxo",
+      authDomain: "metodologias-ativas-f27fd.firebaseapp.com",
+      projectId: "metodologias-ativas-f27fd",
+      storageBucket: "metodologias-ativas-f27fd.appspot.com",
+      messagingSenderId: "996362135793",
+      appId: "1:996362135793:web:d03907eb28f7590cdb6150",
+      measurementId: "G-SFQRGD6MSQ"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+</html>
