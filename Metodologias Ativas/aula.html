@@ -4,382 +4,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metodlogias Ativas</title>
+    <title>Metodologias Ativas</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        
-    </style>
 </head>
 
 <body>
     <div class="navbar">
-        <a href="principal.html" class="logo"><img
-                src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/icon/05d16f9c-c375-4352-88f8-4a836ae0ea4f.png?raw=true" alt=""></a>
+        <a href="principal.html" class="logo">
+            <img src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/icon/05d16f9c-c375-4352-88f8-4a836ae0ea4f.png?raw=true" alt="Logo">
+        </a>
         <ul class="menu">
-            <li><a class="firstpag" href="aula.html">Aulas</a></li>
-            <li><a class="firstpag" href="index.html">Metodologias</a></li>
-            <li><a class="firstpag" href="#">Recursos</a></li>
-            <li><a class="firstpag" href="contato.html">Contato</a></li>
+            <li><a href="aula.html">Aulas</a></li>
+            <li><a href="index.html">Metodologias</a></li>
+            <li><a href="#">Recursos</a></li>
+            <li><a href="contato.html">Contato</a></li>
         </ul>
     </div>
 
     <!-- Menu de aulas -->
     <div class="menu-lateral">
-        <div class="topicos" style="display: inline-block;">
-            <div class="nalinha">
-                <h2>Selecione o Tipo de Aula:</h2>
-                <!-- Botões para seleção do tipo de aula -->
-                <button class="tipo-aula" data-tipo="progressao">Progressão Prática</button>
-                <button class="tipo-aula" data-tipo="rotacao">Rotação por Estações</button>
-                <button class="tipo-aula" data-tipo="invertida">Sala de Aula Invertida</button>
-            </div>
-
-            <div class="submenu">
-                <select id="tipoAula">
-                    <option value="">Selecione o tipo de aula</option>
-                    <option value="progressao">Progressão Prática</option>
-                    <option value="rotacao">Rotação por Estações</option>
-                    <option value="invertida">Sala de Aula Invertida</option>
-                </select>
-            </div>
-
+        <div class="topicos">
+            <h2>Selecione o Tipo de Aula:</h2>
+            <button class="tipo-aula" data-tipo="progressao">Progressão Prática</button>
+            <button class="tipo-aula" data-tipo="rotacao">Rotação por Estações</button>
+            <button class="tipo-aula" data-tipo="invertida">Sala de Aula Invertida</button>
+        </div>
+        <div class="submenu">
+            <select id="tipoAula">
+                <option value="">Selecione o tipo de aula</option>
+                <option value="progressao">Progressão Prática</option>
+                <option value="rotacao">Rotação por Estações</option>
+                <option value="invertida">Sala de Aula Invertida</option>
+            </select>
         </div>
     </div>
 
     <!-- Lista suspensa para selecionar o tema dentro de cada tipo de aula -->
     <div class="topicos" id="topicosAula" style="display: none;">
         <h2>Selecione o Tema da aula:</h2>
-        <select id="opcoesTema" class="select-custom" name="temas">
-            <!-- As opções serão preenchidas dinamicamente com JavaScript -->
-        </select>
+        <select id="opcoesTema" class="select-custom" name="temas"></select>
     </div>
 
     <div class="linha"></div>
-    <br>
 
     <div class="aulas">
-
         <!-- Aulas de Aula Invertida -->
         <div class="aulaH aula Cibersegurança">
             <h3>Cibersegurança Invertida</h3>
-            <!-- Conteúdo da aula invertida -->
-
             <div class="resumo">
-
                 <h4>Resumo</h4>
-
-                <p>Nesta atividade sobre cibersegurança, utilizamos a metodologia de sala de aula invertida com os participantes. Após uma aula introdutória sobre cibersegurança, eles foram divididos em grupos e orientados a pesquisar temas específicos, como phishing, vírus, trojans, privacidade, segurança, boas práticas online, golpes, autenticação de dois fatores (2FA) e atualização de software. A atividade tinha como objetivo desenvolver conhecimentos e habilidades práticas em cibersegurança, promovendo a pesquisa independente, a colaboração e a apresentação de informações de maneira eficaz.
-
-                   <p> Os(as) participantes apresentaram suas pesquisas em uma aula posterior, estas apresentação foram em formado de "X", onde os pequenos grupos apresentaram entre si e puderam ter um aprendizado mais significativo, utilizando exemplos práticos e casos reais. Durante as apresentações, conduziram atividades práticas, como simulações de ataques de phishing e análises de tráfego de rede, permitindo que todos aplicassem os conhecimentos adquiridos. A aula culminou em uma sessão de discussão e perguntas, promovendo uma compreensão mais profunda e a aplicação prática dos conceitos de cibersegurança.</p>
-
-                   
-                   <p> Os(as) participantes desenvolveram habilidades de pesquisa independente, comunicação eficaz, trabalho em equipe, pensamento crítico e aplicação prática. A atividade resultou em uma compreensão mais sólida de cibersegurança, preparando os alunos para enfrentar desafios reais na área de segurança digital.</p>
-
-                
+                <p>Nesta atividade sobre cibersegurança, utilizamos a metodologia de sala de aula invertida. Os participantes foram divididos em grupos e pesquisaram temas específicos como phishing, vírus, trojans, e segurança online. A atividade visou desenvolver conhecimentos e habilidades práticas, promovendo a pesquisa independente, a colaboração e a apresentação de informações de maneira eficaz.</p>
+                <p>Os participantes apresentaram suas pesquisas em formato de "X", onde grupos apresentaram entre si utilizando exemplos práticos e casos reais. Durante as apresentações, foram realizadas atividades práticas, como simulações de ataques de phishing, culminando em uma discussão para uma compreensão mais profunda dos conceitos.</p>
+                <p>Os participantes desenvolveram habilidades de pesquisa, comunicação, trabalho em equipe, pensamento crítico e aplicação prática, resultando em uma compreensão sólida de cibersegurança.</p>
             </div>
             <div class="detalhes">
                 <h4>Detalhes</h4>
-
                 <h5>Antes da Aula</h5>
-
-                <p>O(a) educador(a) realiza uma aula expositiva sobre cibersegurança, abordando conceitos fundamentais como proteção de dados, malware, segurança de redes e boas práticas online.
-                    <spam>Distribuição de Tópicos:</spam> Os participantes são divididos em grupos e recebem tópicos específicos para pesquisa. Cada grupo deve explorar seu tema em profundidade e preparar uma apresentação que inclua exemplos práticos e casos reais.
-                <spam> Orientação para Pesquisa:</spam> Os participantes são incentivados a utilizar diversas fontes de informação, como artigos acadêmicos, vídeos, e estudos de caso, para construir uma compreensão abrangente do seu tópico.
-                    </p>
-
+                <p>O educador realiza uma aula expositiva sobre cibersegurança. Os participantes são divididos em grupos e recebem tópicos específicos para pesquisa.</p>
                 <h5>Durante a Aula</h5>
-                <p>Apresentações dos Grupos: Cada grupo apresenta seu tópico para a turma, explicando os conceitos, as técnicas de segurança e os exemplos práticos que pesquisaram. As apresentações devem ser claras, envolventes e educativas.
-                   
-                    Atividade Prática: Após as apresentações, cada grupo organiza uma atividade prática relacionada ao seu tópico de pesquisa. Essas atividades podem incluir simulações de ataques de phishing, análise de tráfego de rede para identificar ameaças, ou a criação de políticas de senha segura. A prática visa permitir que todos os alunos apliquem os conhecimentos adquiridos de maneira concreta. As apresentações tem duração de até 10 minutos cada, após este período os grupos trocam, podendo assim, todos os participantes conseguirem explicar para os demais.</p>
-
-                    Discussão e Perguntas: A aula é finalizada com uma sessão de discussão onde os alunos podem fazer perguntas, compartilhar insights e aprofundar o entendimento dos temas apresentados.
+                <p>Grupos apresentam seus tópicos para a turma. Atividade prática relacionada ao tema. Discussão e perguntas para aprofundar o entendimento.</p>
                 <h5>Depois da Aula</h5>
-                <p>Reflexões sobre o que funcionou bem, o que poderia ser melhorado e planos para a próxima aula.
-                </p>
+                <p>Reflexões sobre o que funcionou bem e planos para a próxima aula.</p>
             </div>
-
             <div class="habilidades">
-
                 <h4>Habilidades Buscadas</h4>
-                <ul class="habilidade1">
+                <ul>
                     <li>Pesquisa coletiva e coleta de informações</li>
                     <li>Apresentação e comunicação de ideias</li>
                     <li>Trabalho em equipe e colaboração</li>
-                    <li>APlicação prática de conhecimento</li>
+                    <li>Aplicação prática de conhecimento</li>
                     <li>Pensamento crítico e resolução de problemas</li>
-
                 </ul>
             </div>
             <div class="papelProfessor">
                 <h4>Papel do Professor</h4>
-                <p>O(a) educador(a) atua como um facilitador e mentor, guiando os alunos durante a pesquisa, incentivando a colaboração e participação ativa, fornecendo feedback construtivo e ajudando a contextualizar o aprendizado dentro do tema de cibersegurança. O(a) educador(a) também monitora o progresso deles, oferece suporte quando necessário e garante que os objetivos educacionais sejam alcançados.
-
-                    Resultados Esperados: Os participantes devem desenvolver uma compreensão e prática de cibersegurança, aprimorar suas habilidades de pesquisa e apresentação, e aprender a trabalhar eficazmente em equipe. Além disso, espera-se que eles se sintam mais confiantes em aplicar seus conhecimentos teóricos em contextos práticos e estejam melhor preparados para enfrentar desafios reais na área de segurança digital.</p>
+                <p>O educador atua como facilitador, guiando os alunos durante a pesquisa, incentivando a colaboração e participação ativa. Ele fornece feedback e garante que os objetivos educacionais sejam alcançados.</p>
             </div>
             <div class="exemploCross">
                 <h4>Nossas mídias</h4>
                 <p>Veja um pouco sobre o que tivemos neste dia</p>
-
-
-                    <div class="wrapper">
-
-                        <div class="items">
-                            <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Ciberseguran%C3%A7a/WhatsApp%20Image%202024-04-02%20at%209.32.47%20AM%20(1).jpeg?raw=true"
-                                alt="Imagem 1">
-                        </div>
-        
-                        <div class="items">
-                            <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Ciberseguran%C3%A7a/WhatsApp%20Image%202024-04-02%20at%209.32.47%20AM%20(1).jpeg?raw=true"
-                                alt="Imagem 2">
-                        </div>
-        
-                        <div class="items">
-                            <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Ciberseguran%C3%A7a/WhatsApp%20Image%202024-05-08%20at%2011.15.05%20(3)%20(1).jpeg?raw=true"
-                                alt="Imagem 3">
-                        </div>
-        
-                        <div class="items">
-                            <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Ciberseguran%C3%A7a/WhatsApp%20Image%202024-05-08%20at%2011.15.05%20(4)%20(1).jpeg?raw=true"
-                                alt="Imagem 4">
-                        </div>
-        
-                        <div class="items">
-                            <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Ciberseguran%C3%A7a/WhatsApp%20Image%202024-05-08%20at%2011.15.05%20(6)%20(1).jpeg?raw=true"
-                                alt="Imagem 5">
-                        </div>
-        
-                        <div class="items">
-                            <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Ciberseguran%C3%A7a/WhatsApp%20Image%202024-05-08%20at%2011.15.05%20(9)%20(1).jpeg?raw=true"
-                                alt="Imagem 6">
-                        </div>
-        
-                        
-        
-        
+                <div class="wrapper">
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Ciberseguran%C3%A7a/WhatsApp%20Image%202024-04-02%20at%209.32.47%20AM%20(1).jpeg?raw=true" alt="Imagem 1">
                     </div>
-
-
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Ciberseguran%C3%A7a/WhatsApp%20Image%202024-04-02%20at%209.32.47%20AM%20(1).jpeg?raw=true" alt="Imagem 2">
+                    </div>
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Ciberseguran%C3%A7a/WhatsApp%20Image%202024-05-08%20at%2011.15.05%20(3)%20(1).jpeg?raw=true" alt="Imagem 3">
+                    </div>
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Ciberseguran%C3%A7a/WhatsApp%20Image%202024-05-08%20at%2011.15.05%20(4)%20(1).jpeg?raw=true" alt="Imagem 4">
+                    </div>
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Ciberseguran%C3%A7a/WhatsApp%20Image%202024-05-08%20at%2011.15.05%20(6)%20(1).jpeg?raw=true" alt="Imagem 5">
+                    </div>
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Ciberseguran%C3%A7a/WhatsApp%20Image%202024-05-08%20at%2011.15.05%20(9)%20(1).jpeg?raw=true" alt="Imagem 6">
+                    </div>
+                </div>
             </div>
-
-
         </div>
 
         <!-- Aula 1 com Rotação -->
         <div class="aulaComRotação aula Ferramentas_Digitais">
-            <h3> Explorando Ferramentas Digitais</h3>
-
-
+            <h3>Explorando Ferramentas Digitais</h3>
             <div class="resumo">
                 <h4>Resumo</h4>
-                <p>Nesta atividade, os(as) participantes foram envolvidos em um processo ativo de aprendizado, onde
-                    puderam explorar e praticar habilidades relacionadas ao uso de ferramentas digitais, como gestão
-                    de conta de e-mail, agendamento e gerenciamento de eventos na agenda google, e
-                    videochamadas(meet). A aula foi estruturada em estações, onde grupos de participantes circulavam
-                    entre as estações com um tempo pré-determinado em pontos de aprendizagem, guiados por colegas
-                    mais experientes. .</p>
-
+                <p>Os participantes exploraram e praticaram habilidades relacionadas ao uso de ferramentas digitais, como gestão de contas de e-mail e videochamadas. A aula foi estruturada em estações, onde grupos circulavam entre diferentes pontos de aprendizagem, guiados por colegas mais experientes.</p>
             </div>
             <div class="detalhes">
                 <h4>Detalhes</h4>
-
                 <h5>Antes da Aula</h5>
-
-                <p>Organizar o material necessário e fornecer orientações prévias aos participantes.</p>
-                <p>Preparar o ambiente, tornando-o envolvente e com elementos atrativos.</p>
-                <p>Incluir curiosidades sobre os temas abordados para estimular a curiosidade dos(as) participantes.
-                </p>
-                <p>Envolver os(as) participantes na organização do ambiente, incentivando sua participação ativa.
-                </p>
-
-                <br>
-
+                <p>Organizar material necessário e preparar o ambiente. Incluir curiosidades sobre os temas abordados.</p>
                 <h5>Durante a Aula</h5>
-
-
-
                 <ul>
-                    <li>
-                        <h5>Oritação e Explicação da atividade</h5>
-                    </li>
-                    <li>O(a) educador(a) inicia a aula explicando o funcionamento da atividade, fornecendo instruções
-                        claras e objetivas sobre como os(as) participantes devem proceder.
-                    </li>
-                    <li><span>Pontos Positivos:</span> Os(as) participantes compreendem facilmente as instruções e estão
-                        entusiasmados para começar a atividade.
-                    </li>
-                    <li><span>Pontos Negativos</span> Alguns participantes podem ficar confusos com as instruções,
-                        necessitando de uma explicação adicional por parte do(a) educador(a).
-                    </li>
-
+                    <li>Orientação e explicação da atividade</li>
+                    <li>Observação e perguntas pertinentes</li>
+                    <li>Esclarecimento de dúvidas e apoio</li>
+                    <li>Autonomia dos estudantes</li>
                 </ul>
-
-
-                <ul>
-                    <li>
-                        <h5>Observação e Perguntas Pertinentes:</h5>
-                    </li>
-
-                    <li>Durante a realização da atividade, o educador circula pela sala, observando o progresso dos
-                        grupos e fazendo perguntas pertinentes para estimular o pensamento crítico e a participação
-                        ativa.
-                    </li>
-                    <li><span>Pontos Positivos:</span> Os participantes estão engajados na atividade e respondem às
-                        perguntas com entusiasmo, demonstrando compreensão do conteúdo.
-                    </li>
-                    <li><span>Pontos Negativos</span> Alguns grupos podem se sentir inseguros para compartilhar suas
-                        ideias, limitando a discussão e o aprendizado colaborativo.
-
-                    </li>
-
-                </ul>
-
-
-                <ul>
-                    <li>
-                        <h5>Esclarecimento de Dúvidas e Apoio:</h5>
-                    </li>
-
-                    <li>O(a) educador(a) está disponível para esclarecer dúvidas e oferecer apoio conforme necessário,
-                        garantindo que os participantes se sintam apoiados durante o processo de aprendizagem.
-                    </li>
-                    <li><span>Pontos Positivos:</span>Os participantes se sentem confortáveis em pedir ajuda quando
-                        necessário, o que promove um ambiente de aprendizado colaborativo e inclusivo.
-
-                    </li>
-                    <li><span>Pontos Negativos</span> Alguns participantes podem hesitar em pedir ajuda, por receio de
-                        parecerem iniciantes, o que pode prejudicar seu progresso na atividade.
-
-                    </li>
-
-                </ul>
-
-                <ul>
-                    <li>
-                        <h5>Autonomia dos Estudantes</h5>
-                    </li>
-
-                    <li>O(a) educador(a) promove a autonomia dos estudantes, permitindo que eles assumam a
-                        responsabilidade pelo seu próprio aprendizado e tomem decisões independentes ao longo da
-                        atividade.
-                    </li>
-                    <li><span>Pontos Positivos:</span>Os(as) participantes se sentem confortáveis para explorar e
-                        experimentar, desenvolvendo habilidades de resolução de problemas e pensamento crítico.
-                    </li>
-
-                    <li><span>Pontos Negativos</span> Alguns participantes podem sentir-se perdidos ou desorientados sem
-                        a orientação constante do educador, o que pode prejudicar sua eficácia na realização da
-                        atividade.
-
-                    </li>
-
-                </ul>
-
-                <br>
-                <br>
-
                 <h5>Depois da Aula</h5>
-
-                <p>Reflexão sobre o processo de aprendizagem: Incentivar os alunos a refletirem sobre o que aprenderam,
-                    as dificuldades enfrentadas e como superá-las.</p>
-
-                <p>Compartilhamento de experiências: Estimular a troca de experiências entre os alunos, permitindo que
-                    compartilhem o que aprenderam e como se sentiram durante a atividade.</p>
-                    <br>
-                <p>
-                    <spam>Identificação de pontos positivos e negativos:</spam> Auxiliar os alunos a identificarem o que
-                    funcionou bem e o que pode ser melhorado na atividade, incentivando a autocrítica e a busca por
-                    aprimoramento
-                </p>
-                <br>
-                <p>
-                    <spam>Planejamento de aplicação dos aprendizados:</spam> Promover a reflexão sobre como os alunos
-                    podem aplicar os conhecimentos adquiridos em situações futuras, incentivando a transferência de
-                    aprendizado para contextos práticos.
-                </p>
-                <br>
-                <p>
-                    <spam>Feedback construtivo:</spam> Fornecer feedback construtivo aos alunos, destacando seus pontos
-                    fortes e áreas de melhoria, para que possam continuar a desenvolver suas habilidades e competências.
-                </p>
-
+                <p>Reflexão e discussão sobre a atividade, pontos positivos, dificuldades e possíveis melhorias.</p>
             </div>
             <div class="habilidades">
                 <h4>Habilidades Buscadas</h4>
-                
-                <ul class="habilidade1">
-                   
-                    <li>Gestão de Contas Online</li>
-                    <li>Comunicação por E-mail</li>
-                    <li>Agendamento e Gerenciamento de Eventos na Agenda</li>
-                    <li>Comunicação em Videochamadas</li>
-
+                <ul>
+                    <li>Aprendizagem ativa e prática</li>
+                    <li>Desenvolvimento de autonomia</li>
+                    <li>Troca de experiências e saberes</li>
+                    <li>Trabalho colaborativo</li>
+                    <li>Uso responsável das ferramentas digitais</li>
                 </ul>
             </div>
             <div class="papelProfessor">
-
-                <h4>Papel(a) do Educador(a)</h4>
-                <p>O papel do(a) Educador(a) nesta atividade é importante para o sucesso do processo de
-                    aprendizagem. Ele/Ela atua como facilitador(a), criando um ambiente propício para a aprendizagem ativa e colaborativa. Orienta os(as) participantes no funcionamento da atividade, explicando claramente as instruções e garantindo que todos compreendam seus papéis e responsabilidades.</p>
-
-                    <p>Além disso, desempenha o papel de observador e mentor, estando atento às interações dos(as)participantes e intervindo quando necessário para esclarecer dúvidas, oferecer suporte e manter o ritmo da atividade, além de incentivar a participação ativa dos(as) participantes, estimulando o diálogo e a colaboração entre eles.</p>
-
-                <p> O(a) educador(a) também é um mediador(a) do processo de aprendizagem, facilitando a reflexão dos(as) participantes sobre suas experiências, promovendo discussões significativas e auxiliando na consolidação dos aprendizados. Por fim, fornece feedback construtivo aos participantes, destacando seus pontos fortes e identificando áreas de melhoria, para que possam continuar a desenvolver suas habilidades e competências.</p>
-
+                <h4>Papel do Professor</h4>
+                <p>O professor atua como mediador, oferecendo suporte, tirando dúvidas e incentivando o aprendizado ativo.</p>
             </div>
-
             <div class="exemploCross">
-                <h4>Veja abaixo nossas mídias</h4>
-                <p>Clique e veja um pouco das nossas atividades</p>
-
-
-
+                <h4>Nossas mídias</h4>
+                <p>Veja um pouco sobre o que tivemos neste dia</p>
                 <div class="wrapper">
-
                     <div class="items">
-                        <img class="item"
-                            src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/WhatsApp%20Image%202024-04-10%20at%2011.29.37%20(1).jpeg?raw=true"
-                            alt="Imagem 1">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/FerramentasDigitais/WhatsApp%20Image%202024-04-02%20at%209.32.48%20AM.jpeg?raw=true" alt="Imagem 7">
                     </div>
-
                     <div class="items">
-                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/WhatsApp%20Image%202024-04-10%20at%2011.29.38%20(1).jpeg?raw=true"
-                            alt="Imagem 2">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/FerramentasDigitais/WhatsApp%20Image%202024-04-02%20at%209.32.48%20AM%20(1).jpeg?raw=true" alt="Imagem 8">
                     </div>
-
                     <div class="items">
-                        <img class="item"
-                            src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/WhatsApp%20Image%202024-04-10%20at%2011.29.38.jpeg?raw=true"
-                            alt="Imagem 3">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/FerramentasDigitais/WhatsApp%20Image%202024-04-02%20at%209.32.48%20AM%20(3).jpeg?raw=true" alt="Imagem 9">
                     </div>
-
                     <div class="items">
-                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/WhatsApp%20Image%202024-04-10%20at%2011.29.39%20(1).jpeg?raw=true"
-                            alt="Imagem 4">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/FerramentasDigitais/WhatsApp%20Image%202024-04-02%20at%209.32.48%20AM%20(5).jpeg?raw=true" alt="Imagem 10">
                     </div>
-
                     <div class="items">
-                        <img class="item"
-                            src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/WhatsApp%20Image%202024-04-10%20at%2011.29.39.jpeg?raw=true"
-                            alt="Imagem 5">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/FerramentasDigitais/WhatsApp%20Image%202024-04-02%20at%209.32.48%20AM%20(4).jpeg?raw=true" alt="Imagem 11">
                     </div>
-
                     <div class="items">
-                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/WhatsApp%20Image%202024-04-10%20at%2011.29.40.jpeg?raw=true"
-                            alt="Imagem 6">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/FerramentasDigitais/WhatsApp%20Image%202024-04-02%20at%209.32.48%20AM%20(2).jpeg?raw=true" alt="Imagem 12">
                     </div>
-
-                    <div class="items">
-                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/WhatsApp%20Image%202024-04-10%20at%2011.29.40.jpeg?raw=true"
-                            alt="Imagem 7">
-                    </div>
-                   
-
-
-
                 </div>
             </div>
-
         </div>
+
+        <!-- Aula 2 com Rotação -->
+        <div class="aulaComRotação aula CSS">
+            <h3>Explorando CSS e Design Responsivo</h3>
+            <div class="resumo">
+                <h4>Resumo</h4>
+                <p>Os participantes exploraram e praticaram habilidades relacionadas a CSS, design responsivo e frameworks como Bootstrap. A aula foi organizada em estações, onde grupos circulavam entre diferentes pontos de aprendizagem, guiados por colegas mais experientes.</p>
+            </div>
+            <div class="detalhes">
+                <h4>Detalhes</h4>
+                <h5>Antes da Aula</h5>
+                <p>Organizar material necessário e preparar o ambiente. Incluir curiosidades sobre os temas abordados.</p>
+                <h5>Durante a Aula</h5>
+                <ul>
+                    <li>Orientação e explicação da atividade</li>
+                    <li>Observação e perguntas pertinentes</li>
+                    <li>Esclarecimento de dúvidas e apoio</li>
+                    <li>Autonomia dos estudantes</li>
+                </ul>
+                <h5>Depois da Aula</h5>
+                <p>Reflexão e discussão sobre a atividade, pontos positivos, dificuldades e possíveis melhorias.</p>
+            </div>
+            <div class="habilidades">
+                <h4>Habilidades Buscadas</h4>
+                <ul>
+                    <li>Aprendizagem ativa e prática</li>
+                    <li>Desenvolvimento de autonomia</li>
+                    <li>Troca de experiências e saberes</li>
+                    <li>Trabalho colaborativo</li>
+                    <li>Uso responsável das ferramentas digitais</li>
+                </ul>
+            </div>
+            <div class="papelProfessor">
+                <h4>Papel do Professor</h4>
+                <p>O professor atua como mediador, oferecendo suporte, tirando dúvidas e incentivando o aprendizado ativo.</p>
+            </div>
+            <div class="exemploCross">
+                <h4>Nossas mídias</h4>
+                <p>Veja um pouco sobre o que tivemos neste dia</p>
+                <div class="wrapper">
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/CSS/WhatsApp%20Image%202024-04-02%20at%209.32.49%20AM%20(1).jpeg?raw=true" alt="Imagem 13">
+                    </div>
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/CSS/WhatsApp%20Image%202024-04-02%20at%209.32.49%20AM.jpeg?raw=true" alt="Imagem 14">
+                    </div>
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/CSS/WhatsApp%20Image%202024-04-02%20at%209.32.49%20AM%20(2).jpeg?raw=true" alt="Imagem 15">
+                    </div>
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/CSS/WhatsApp%20Image%202024-04-02%20at%209.32.49%20AM%20(3).jpeg?raw=true" alt="Imagem 16">
+                    </div>
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/CSS/WhatsApp%20Image%202024-04-02%20at%209.32.49%20AM%20(4).jpeg?raw=true" alt="Imagem 17">
+                    </div>
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/CSS/WhatsApp%20Image%202024-04-02%20at%209.32.49%20AM%20(5).jpeg?raw=true" alt="Imagem 18">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aula 1 com Progressão -->
+        <div class="aulaComProgressão aula Matemática">
+            <h3>Matemática com Programação</h3>
+            <div class="resumo">
+                <h4>Resumo</h4>
+                <p>Nesta aula, os alunos trabalharam com conceitos de matemática e programação para resolver problemas reais. Utilizando a progressão prática, eles aplicaram o que aprenderam em atividades práticas.</p>
+            </div>
+            <div class="detalhes">
+                <h4>Detalhes</h4>
+                <h5>Antes da Aula</h5>
+                <p>Preparar materiais e exemplos práticos. Planejar atividades que integrem matemática e programação.</p>
+                <h5>Durante a Aula</h5>
+                <ul>
+                    <li>Apresentação de problemas reais para os alunos resolverem</li>
+                    <li>Orientação e apoio durante a resolução de problemas</li>
+                    <li>Estimular a colaboração e troca de ideias entre alunos</li>
+                </ul>
+                <h5>Depois da Aula</h5>
+                <p>Avaliar os resultados, discutir o que foi aprendido e explorar melhorias para as próximas aulas.</p>
+            </div>
+            <div class="habilidades">
+                <h4>Habilidades Buscadas</h4>
+                <ul>
+                    <li>Resolução de problemas</li>
+                    <li>Integração de conceitos teóricos com prática</li>
+                    <li>Colaboração entre pares</li>
+                    <li>Autonomia e autoconfiança na resolução de desafios</li>
+                </ul>
+            </div>
+            <div class="papelProfessor">
+                <h4>Papel do Professor</h4>
+                <p>O professor atua como guia, facilitando a aprendizagem ao oferecer exemplos práticos e suporte durante a resolução de problemas.</p>
+            </div>
+            <div class="exemploCross">
+                <h4>Nossas mídias</h4>
+                <p>Veja um pouco sobre o que tivemos neste dia</p>
+                <div class="wrapper">
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Matem%C3%A1tica/WhatsApp%20Image%202024-04-02%20at%209.32.50%20AM.jpeg?raw=true" alt="Imagem 19">
+                    </div>
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Matem%C3%A1tica/WhatsApp%20Image%202024-04-02%20at%209.32.50%20AM%20(1).jpeg?raw=true" alt="Imagem 20">
+                    </div>
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Matem%C3%A1tica/WhatsApp%20Image%202024-04-02%20at%209.32.50%20AM%20(2).jpeg?raw=true" alt="Imagem 21">
+                    </div>
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Matem%C3%A1tica/WhatsApp%20Image%202024-04-02%20at%209.32.50%20AM%20(3).jpeg?raw=true" alt="Imagem 22">
+                    </div>
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Matem%C3%A1tica/WhatsApp%20Image%202024-04-02%20at%209.32.50%20AM%20(4).jpeg?raw=true" alt="Imagem 23">
+                    </div>
+                    <div class="items">
+                        <img class="item" src="https://github.com/JoandsonSilva/Projetos2024/blob/main/Metodologias%20Ativas/Imagem/Matem%C3%A1tica/WhatsApp%20Image%202024-04-02%20at%209.32.50%20AM%20(5).jpeg?raw=true" alt="Imagem 24">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
 
 
         <!--Aula 2 com rotação-->
