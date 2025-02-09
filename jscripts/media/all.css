@@ -1,0 +1,35 @@
+
+@media (max-width: 1024px) {
+
+    img {border: none; max-width: 96%; height: auto; width: expression(this.width > 96% ? 96%: true);-moz-border-radius: 6px;border-radius: 6px;-webkit-border-radius:6px;}
+    
+    /* Widget8 */
+    #widget8{
+            position:static !important;
+            z-index : auto;
+            margin:0 0 20px 0 !important;
+    }
+    
+    object, embed, marquee, hr {
+            max-width: 100%;
+    }
+    
+    table, tbody, tfoot, thead, tr, th, td {
+        max-width: 100%;
+    }
+    
+    h1, h2, h3, h4, h5 {
+        line-height: 150%;
+    }
+    
+    }
+    
+    @media (max-width: 999px) {
+    
+    iframe {
+            top: 0;
+            left: 0;
+            width: 100%;
+    }
+    
+    }

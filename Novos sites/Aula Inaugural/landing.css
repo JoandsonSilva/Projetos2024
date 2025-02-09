@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f5f6;
+    color: #020925;
+}
+
+.container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image-content {
+    flex: 1;
+    text-align: right;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    width: 60%;
+    mix-blend-mode:multiply;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn-insta {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-contato {
+    background-color: #333;
+    color: #fff;
+}
+
+.habilidades {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.habilidade {
+    width: 30%;
+    text-align: center;
+}
+
+.habilidade img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.habilidade h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.habilidade p {
+    font-size: 1em;
+}
